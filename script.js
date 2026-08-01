@@ -56,13 +56,12 @@
   const fallbackProfile = { public_repos: 35, followers: 45 };
   const fallbackRepos = {
     Geoscan_MOPS: [5, 1], FrogeeCore: [13, 1], LogicCircuitSimulator: [7, 1],
-    FgSNotes: [7, 0], 'ecoCheck-library': [5, 0], 'yasno-service': [0, 0], FgSdrones: [4, 3]
+    FgSNotes: [7, 0], 'ecoCheck-library': [5, 0], 'yasno-service': [0, 0],
+    FgSdrones: [4, 3], MarketLog: [3, 0], 'Warehouse-delivery-robot': [2, 0]
   };
 
   const updateRepoCards = repos => {
-    let totalStars = 0;
     repos.forEach(repo => {
-      totalStars += repo.stargazers_count || 0;
       const card = document.querySelector(`[data-repo="${CSS.escape(repo.name)}"]`);
       if (!card) return;
       const starEl = card.querySelector('[data-repo-stars]');
@@ -70,8 +69,6 @@
       if (starEl) starEl.textContent = `★ ${repo.stargazers_count}`;
       if (forkEl) forkEl.textContent = `⑂ ${repo.forks_count}`;
     });
-    const totalEl = document.querySelector('[data-stat="stars"]');
-    if (totalEl && totalStars) totalEl.textContent = String(totalStars);
   };
 
   const applyFallbacks = () => {
@@ -85,23 +82,34 @@
     });
   };
 
+  const githubJson = url => fetch(url, {
+    headers: { Accept: 'application/vnd.github+json' }
+  }).then(response => {
+    if (!response.ok) throw new Error(`GitHub request failed: ${response.status}`);
+    return response.json();
+  });
+
   applyFallbacks();
   Promise.all([
-    fetch('https://api.github.com/users/ArduRadioKot', { headers: { Accept: 'application/vnd.github+json' } }).then(r => {
-      if (!r.ok) throw new Error('GitHub profile unavailable');
-      return r.json();
-    }),
-    fetch('https://api.github.com/users/ArduRadioKot/repos?per_page=100&sort=updated', { headers: { Accept: 'application/vnd.github+json' } }).then(r => {
-      if (!r.ok) throw new Error('GitHub repositories unavailable');
-      return r.json();
-    })
-  ]).then(([profile, repos]) => {
-    document.querySelector('[data-stat="repos"]').textContent = profile.public_repos ?? fallbackProfile.public_repos;
-    document.querySelector('[data-stat="followers"]').textContent = profile.followers ?? fallbackProfile.followers;
-    updateRepoCards(repos);
+    githubJson('https://api.github.com/users/ArduRadioKot'),
+    githubJson('https://api.github.com/users/ArduRadioKot/repos?per_page=100&sort=updated'),
+    githubJson('https://api.github.com/users/X200L/repos?per_page=100&sort=updated').catch(() => [])
+  ]).then(([profile, arduRepos, x200lRepos]) => {
+    const reposEl = document.querySelector('[data-stat="repos"]');
+    const followersEl = document.querySelector('[data-stat="followers"]');
+    const starsEl = document.querySelector('[data-stat="stars"]');
+    if (reposEl) reposEl.textContent = profile.public_repos ?? fallbackProfile.public_repos;
+    if (followersEl) followersEl.textContent = profile.followers ?? fallbackProfile.followers;
+    if (starsEl) {
+      const totalStars = arduRepos.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0);
+      if (totalStars) starsEl.textContent = String(totalStars);
+    }
+    updateRepoCards([...arduRepos, ...x200lRepos]);
   }).catch(() => {
-    document.querySelector('[data-stat="repos"]').textContent = fallbackProfile.public_repos;
-    document.querySelector('[data-stat="followers"]').textContent = fallbackProfile.followers;
+    const reposEl = document.querySelector('[data-stat="repos"]');
+    const followersEl = document.querySelector('[data-stat="followers"]');
+    if (reposEl) reposEl.textContent = fallbackProfile.public_repos;
+    if (followersEl) followersEl.textContent = fallbackProfile.followers;
   });
 
   document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
