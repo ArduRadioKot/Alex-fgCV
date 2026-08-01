@@ -20,16 +20,24 @@
   const mobileMenu = document.querySelector('[data-mobile-menu]');
   const closeMenu = () => {
     menuToggle?.setAttribute('aria-expanded', 'false');
+    mobileMenu?.setAttribute('aria-hidden', 'true');
     mobileMenu?.classList.remove('is-open');
     document.body.classList.remove('menu-open');
   };
   menuToggle?.addEventListener('click', () => {
     const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
     menuToggle.setAttribute('aria-expanded', String(!isOpen));
+    mobileMenu?.setAttribute('aria-hidden', String(isOpen));
     mobileMenu?.classList.toggle('is-open', !isOpen);
     document.body.classList.toggle('menu-open', !isOpen);
   });
   mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMenu();
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 980) closeMenu();
+  }, { passive: true });
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -52,8 +60,6 @@
     };
     animate();
   }
-
-  const fallbackProfile = { public_repos: 35, followers: 45 };
   const fallbackRepos = {
     Geoscan_MOPS: [5, 1], FrogeeCore: [13, 1], LogicCircuitSimulator: [7, 1],
     FgSNotes: [7, 0], 'ecoCheck-library': [5, 0], 'yasno-service': [0, 0],
@@ -91,25 +97,12 @@
 
   applyFallbacks();
   Promise.all([
-    githubJson('https://api.github.com/users/ArduRadioKot'),
     githubJson('https://api.github.com/users/ArduRadioKot/repos?per_page=100&sort=updated'),
     githubJson('https://api.github.com/users/X200L/repos?per_page=100&sort=updated').catch(() => [])
-  ]).then(([profile, arduRepos, x200lRepos]) => {
-    const reposEl = document.querySelector('[data-stat="repos"]');
-    const followersEl = document.querySelector('[data-stat="followers"]');
-    const starsEl = document.querySelector('[data-stat="stars"]');
-    if (reposEl) reposEl.textContent = profile.public_repos ?? fallbackProfile.public_repos;
-    if (followersEl) followersEl.textContent = profile.followers ?? fallbackProfile.followers;
-    if (starsEl) {
-      const totalStars = arduRepos.reduce((sum, repo) => sum + (repo.stargazers_count || 0), 0);
-      if (totalStars) starsEl.textContent = String(totalStars);
-    }
+  ]).then(([arduRepos, x200lRepos]) => {
     updateRepoCards([...arduRepos, ...x200lRepos]);
   }).catch(() => {
-    const reposEl = document.querySelector('[data-stat="repos"]');
-    const followersEl = document.querySelector('[data-stat="followers"]');
-    if (reposEl) reposEl.textContent = fallbackProfile.public_repos;
-    if (followersEl) followersEl.textContent = fallbackProfile.followers;
+    // Static fallback values are already rendered in the project cards.
   });
 
   document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
