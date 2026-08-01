@@ -7,8 +7,8 @@
   --muted: #98a398;
   --line: rgba(240, 255, 238, .13);
   --line-strong: rgba(240, 255, 238, .28);
-  --accent: #baff66;
-  --accent-2: #68f3c0;
+  --accent: #91E48B;
+  --accent-2: #21AABE;
   --shadow: 0 30px 80px rgba(0, 0, 0, .35);
   --radius: 18px;
   --header-h: 82px;
@@ -24,8 +24,8 @@
   --muted: #5e695f;
   --line: rgba(18, 23, 19, .13);
   --line-strong: rgba(18, 23, 19, .26);
-  --accent: #72b521;
-  --accent-2: #0a9e73;
+  --accent: #91E48B;
+  --accent-2: #21AABE;
   --shadow: 0 30px 80px rgba(45, 55, 44, .13);
 }
 
@@ -451,4 +451,98 @@ footer a:last-child { color:var(--text);font-weight:750; }
   .contact-card { box-shadow:none; }
   .reveal { opacity:1;transform:none; }
   a { text-decoration:none; }
+}
+
+
+/* 2026-08 portfolio refresh */
+.brand-logo-switch {
+  position: relative;
+  display: inline-grid;
+  align-items: center;
+  width: 178px;
+  line-height: 0;
+}
+.brand-logo-switch img { grid-area: 1 / 1; width: 100%; height: auto; object-fit: contain; }
+.brand-logo-light { display: none; }
+[data-theme="light"] .brand-logo-dark { display: none; }
+[data-theme="light"] .brand-logo-light { display: block; }
+.team-card-brand .brand-logo-switch { width: min(100%, 290px); position: relative; z-index: 1; }
+.footer-logo .brand-logo-switch { width: 154px; }
+
+.hero-scroll-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  z-index: 5;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+  font-size: .67rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  transition: color .2s, transform .2s;
+}
+.hero-scroll-arrow:hover { color: var(--text); transform: translateX(-50%) translateY(3px); }
+.hero-scroll-arrow svg { width: 28px; height: 28px; fill: none; stroke: var(--accent); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; animation: arrowBounce 1.8s ease-in-out infinite; }
+@keyframes arrowBounce { 50% { transform: translateY(5px); } }
+
+.project-image-featured { display: block; background: var(--bg-soft); }
+.project-image-featured img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .55s cubic-bezier(.2,.7,.2,1); }
+.project-image-featured:hover img { transform: scale(1.025); }
+.project-image-featured::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 54%, rgba(5, 12, 10, .38)); pointer-events: none; }
+.project-image-badge { position: absolute; left: 18px; bottom: 18px; z-index: 2; padding: 8px 11px; border: 1px solid rgba(255,255,255,.25); border-radius: 5px; background: rgba(7,14,12,.72); color: #fff; backdrop-filter: blur(12px); font-size: .7rem; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
+.featured-links { margin-top: 28px; }
+
+.project-card { min-height: 560px; }
+.project-card-media {
+  position: relative;
+  display: block;
+  height: 218px;
+  margin: 25px 0 24px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--bg-soft);
+}
+.project-card-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .45s cubic-bezier(.2,.7,.2,1), filter .3s; }
+.project-card-media:hover img { transform: scale(1.035); }
+.project-card-media.media-contain img { object-fit: contain; }
+.project-card-media.media-dark { background: #22313b; }
+.project-card-media.media-light { background: #fff; }
+.project-card .tags { margin-top: auto; }
+.project-card .project-links { margin-top: 24px; }
+
+@media (min-width: 981px) {
+  .hero-visual { margin-top: -92px; }
+  .portrait-card { border-radius: 12px; }
+  .portrait-wrap { border-radius: 8px; }
+  .button, .print-button { border-radius: 6px; }
+  .overview-card, .skill-card, .team-card, .project-featured, .project-card, .all-projects, .contact-card { border-radius: 9px; }
+  .team-card-brand, .project-visual { border-radius: 7px; }
+  .team-directions span, .project-image-badge { border-radius: 4px; }
+}
+
+@media (max-width: 980px) {
+  .brand-logo-switch { width: 178px; }
+  .hero-scroll-arrow { display: none; }
+  .project-card-media { height: clamp(220px, 50vw, 360px); border-radius: 18px; }
+  .project-card { min-height: 0; }
+}
+
+@media (max-width: 620px) {
+  .brand-logo-switch { width: 142px; }
+  .footer-logo .brand-logo-switch { width: 132px; }
+  .project-card-media { margin: 20px 0; border-radius: 16px; }
+}
+
+/* Color balance and final desktop positioning */
+.section-label span,
+.project-number { color: var(--accent-2); }
+@media (min-width: 981px) {
+  .hero-visual { margin-top: -64px; }
+  .project-card-media { height: auto; aspect-ratio: 16 / 9; }
 }
