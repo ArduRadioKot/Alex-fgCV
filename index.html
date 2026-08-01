@@ -1,528 +1,984 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="ru">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Портфолио Александра — разработчика и инженера: embedded, робототехника, компьютерное зрение, AI, web и IoT." name="description"/>
-<meta content="#090c0a" name="theme-color"/>
-<meta content="Александр — Developer &amp; Engineer" property="og:title"/>
-<meta content="Личное портфолио Александра: FrogeeSoft / S.I.T, embedded, робототехника, компьютерное зрение, AI, web и IoT." property="og:description"/>
-<meta content="website" property="og:type"/>
-<title>Александр — Developer &amp; Engineer</title>
-<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="styles.css" rel="stylesheet"/>
-<script defer="" src="script.js"></script>
-</head>
-<body>
-<a class="skip-link" href="#main">Перейти к содержимому</a>
-<div aria-hidden="true" class="cursor-glow"></div>
-<div aria-hidden="true" class="page-noise"></div>
-<header class="site-header" data-header="">
-<a aria-label="FrogeeSoft — на главную" class="brand brand-logo-link" href="#top">
-<span aria-hidden="true" class="brand-logo-switch">
-<img alt="" class="brand-logo-dark" height="85" src="assets/frogeesoft-logo.png" width="309"/>
-<img alt="" class="brand-logo-light" height="85" src="assets/frogeesoft-logo-light.png" width="309"/>
-</span>
-</a>
-<nav aria-label="Основная навигация" class="desktop-nav">
-<a href="#info">Основная информация</a>
-<a href="#about">Обо мне</a>
-<a href="#projects">Проекты</a>
-<a href="#achievements">Достижения</a>
-<a href="#contact">Контакты</a>
-</nav>
-<div class="header-actions">
-<button aria-label="Переключить тему" class="theme-toggle" data-theme-toggle="" type="button">
-<svg aria-hidden="true" class="sun" viewbox="0 0 24 24">
-<circle cx="12" cy="12" r="4"></circle>
-<path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
-</svg>
-<svg aria-hidden="true" class="moon" viewbox="0 0 24 24">
-<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
-</svg>
-</button>
-<button aria-expanded="false" aria-label="Открыть меню" class="menu-toggle" data-menu-toggle="" type="button">
-<span></span><span></span>
-</button>
-</div>
-</header>
-<div class="mobile-menu" data-mobile-menu="">
-<a href="#info">Основная информация</a>
-<a href="#about">Обо мне</a>
-<a href="#projects">Проекты</a>
-<a href="#achievements">Достижения</a>
-<a href="#contact">Контакты</a>
-</div>
-<main id="main">
-<section class="hero section" id="top">
-<div class="hero-copy reveal">
-<h1>
-            Привет, я <span>Александр.</span><br/>Создаю технологии,<br/>которые
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="Портфолио Александра — разработчика и инженера: embedded, робототехника, компьютерное зрение, AI, web и IoT."
+      name="description"
+    />
+    <meta content="#090c0a" name="theme-color" />
+    <meta content="Александр — Developer &amp; Engineer" property="og:title" />
+    <meta
+      content="Личное портфолио Александра: FrogeeSoft / S.I.T, embedded, робототехника, компьютерное зрение, AI, web и IoT."
+      property="og:description"
+    />
+    <meta content="website" property="og:type" />
+    <title>Александр — Developer &amp; Engineer</title>
+    <link href="assets/logo.png" rel="icon" type="image/png" />
+    <link href="styles.css" rel="stylesheet" />
+    <script defer="" src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div aria-hidden="true" class="cursor-glow"></div>
+    <div aria-hidden="true" class="page-noise"></div>
+    <header class="site-header" data-header="">
+      <a
+        aria-label="FrogeeSoft — на главную"
+        class="brand brand-logo-link"
+        href="#top"
+      >
+        <span aria-hidden="true" class="brand-logo-switch">
+          <img
+            alt=""
+            class="brand-logo-dark"
+            height="85"
+            src="assets/frogeesoft-logo.png"
+            width="309"
+          />
+          <img
+            alt=""
+            class="brand-logo-light"
+            height="85"
+            src="assets/frogeesoft-logo-light.png"
+            width="309"
+          />
+        </span>
+      </a>
+      <nav aria-label="Основная навигация" class="desktop-nav">
+        <a href="#info">Основная информация</a>
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Проекты</a>
+        <a href="#achievements">Достижения</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          aria-label="Переключить тему"
+          class="theme-toggle"
+          data-theme-toggle=""
+          type="button"
+        >
+          <svg aria-hidden="true" class="sun" viewbox="0 0 24 24">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"
+            ></path>
+          </svg>
+          <svg aria-hidden="true" class="moon" viewbox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+          </svg>
+        </button>
+        <button
+          aria-expanded="false"
+          aria-label="Открыть меню"
+          class="menu-toggle"
+          data-menu-toggle=""
+          type="button"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <div class="mobile-menu" data-mobile-menu="">
+      <a href="#info">Основная информация</a>
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#achievements">Достижения</a>
+      <a href="#contact">Контакты</a>
+    </div>
+    <main id="main">
+      <section class="hero section" id="top">
+        <div class="hero-copy reveal">
+          <h1>
+            Привет, я <span>Александр.</span><br />Создаю технологии,<br />которые
             работают.
           </h1>
-<p class="hero-lead">
+          <p class="hero-lead">
             Разработчик и инженер. Собираю продукты на стыке embedded,
             робототехники, искусственного интеллекта и web — от IoT-платформ до
             автономных роботов и систем компьютерного зрения.
           </p>
-<div class="hero-actions">
-<a class="button button-primary" href="#projects">Смотреть проекты <span aria-hidden="true">↘</span></a>
-<a class="button button-secondary" href="mailto:frogeesoft.team@gmail.com">Написать мне</a>
-</div>
-<div aria-label="Краткая статистика GitHub" class="hero-meta">
-<div>
-<strong data-stat="repos">35</strong><span>репозиториев</span>
-</div>
-<div>
-<strong data-stat="followers"> 45</strong><span>подписчиков</span>
-</div>
-<div>
-<strong data-stat="stars"> 40+</strong><span>звёзд проектов</span>
-</div>
-</div>
-</div>
-<div class="hero-visual reveal reveal-delay-1">
-<div class="portrait-card">
-<div class="portrait-topbar">
-<span></span><span></span><span></span><small>speaker_mode.bat</small>
-</div>
-<div class="portrait-wrap">
-<img alt="Александр выступает с презентацией технологического проекта" height="872" src="assets/alexander.webp" width="900"/>
-<div class="portrait-overlay"></div>
-<div class="portrait-caption">
-<span>Developer / Engineer</span>
-<strong>S.I.T · FrogeeSoft</strong>
-</div>
-</div>
-<div aria-hidden="true" class="code-float code-float-a">
-<span>01</span> build<br/>ideas();
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"
+              >Смотреть проекты <span aria-hidden="true">↘</span></a
+            >
+            <a
+              class="button button-secondary"
+              href="mailto:frogeesoft.team@gmail.com"
+              >Написать мне</a
+            >
+          </div>
+          <div aria-label="Краткая статистика GitHub" class="hero-meta">
+            <div>
+              <strong data-stat="repos">35</strong><span>репозиториев</span>
             </div>
-<div aria-hidden="true" class="code-float code-float-b">
+            <div>
+              <strong data-stat="followers"> 45</strong><span>подписчиков</span>
+            </div>
+            <div>
+              <strong data-stat="stars"> 40+</strong><span>звёзд проектов</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="portrait-card">
+            <div class="portrait-topbar">
+              <span></span><span></span><span></span
+              ><small>speaker_mode.bat</small>
+            </div>
+            <div class="portrait-wrap">
+              <img
+                alt="Александр выступает с презентацией технологического проекта"
+                height="872"
+                src="assets/alexander.webp"
+                width="900"
+              />
+              <div class="portrait-overlay"></div>
+              <div class="portrait-caption">
+                <span>Developer / Engineer</span>
+                <strong>S.I.T · FrogeeSoft</strong>
+              </div>
+            </div>
+            <div aria-hidden="true" class="code-float code-float-a">
+              <span>01</span> build<br />ideas();
+            </div>
+            <div aria-hidden="true" class="code-float code-float-b">
               status: <b>shipping</b>
-</div>
-</div>
-</div>
-<div aria-hidden="true" class="scroll-hint">
-<span>scroll</span><i></i>
-</div>
-<a aria-label="Перейти к основной информации" class="hero-scroll-arrow" href="#info">
-<span>К основной информации</span>
-<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 4v15M6.5 13.5 12 19l5.5-5.5"></path></svg>
-</a></section>
-<section aria-label="Ключевые направления" class="marquee">
-<div class="marquee-track">
-<span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
-<span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
-</div>
-</section>
-<section class="section profile-overview" id="info">
-<div class="section-heading reveal">
-<div class="section-label"><span>01</span> Основная информация</div>
-<h2>Основная информация</h2>
-<p>
+            </div>
+          </div>
+        </div>
+        <div aria-hidden="true" class="scroll-hint">
+          <span>scroll</span><i></i>
+        </div>
+        <a
+          aria-label="Перейти к основной информации"
+          class="hero-scroll-arrow"
+          href="#info"
+        >
+          <span>К основной информации</span>
+          <svg aria-hidden="true" viewbox="0 0 24 24">
+            <path d="M12 4v15M6.5 13.5 12 19l5.5-5.5"></path>
+          </svg>
+        </a>
+      </section>
+      <section aria-label="Ключевые направления" class="marquee">
+        <div class="marquee-track">
+          <span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i
+          ><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i
+          ><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
+          <span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i
+          ><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i
+          ><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
+        </div>
+      </section>
+      <section class="section profile-overview" id="info">
+        <div class="section-heading reveal">
+          <div class="section-label"><span>01</span> Основная информация</div>
+          <h2>Основная информация</h2>
+          <p>
             Учусь, разрабатываю собственные продукты и получаю опыт на реальных
             задачах от технологических компаний.
           </p>
-</div>
-<div class="overview-grid">
-<article class="overview-card reveal">
-<span class="overview-kicker">Образование</span>
-<h3>Научно-технологический университет «Сириус»</h3>
-<p>
+        </div>
+        <div class="overview-grid">
+          <article class="overview-card reveal">
+            <span class="overview-kicker">Образование</span>
+            <h3>Научно-технологический университет «Сириус»</h3>
+            <p>
               Студент 1 курса. Развиваюсь в программной инженерии, робототехнике
               и создании сложных технологических систем.
             </p>
-<div class="fact-line"><b>01</b><span>курс</span></div>
-</article>
-<article class="overview-card overview-card-stack reveal reveal-delay-1">
-<span class="overview-kicker">Основной стек</span>
-<h3>От микроконтроллера до интерфейса</h3>
-<div class="stack-groups">
-<div>
-<small>Languages</small>
-<p>C · C++ · Python · JavaScript · TypeScript</p>
-</div>
-<div>
-<small>Robotics / Embedded</small>
-<p>ROS / ROS 2 · ESP32 · Arduino · Pioneer SDK · MAVLink</p>
-</div>
-<div>
-<small>AI / Backend / Web</small>
-<p>
+            <div class="fact-line"><b>01</b><span>курс</span></div>
+          </article>
+          <article
+            class="overview-card overview-card-stack reveal reveal-delay-1"
+          >
+            <span class="overview-kicker">Основной стек</span>
+            <h3>От микроконтроллера до интерфейса</h3>
+            <div class="stack-groups">
+              <div>
+                <small>Languages</small>
+                <p>C · C++ · Python · JavaScript · TypeScript</p>
+              </div>
+              <div>
+                <small>Robotics / Embedded</small>
+                <p>ROS / ROS 2 · ESP32 · Arduino · Pioneer SDK · MAVLink</p>
+              </div>
+              <div>
+                <small>AI / Backend / Web</small>
+                <p>
                   OpenCV · YOLO · NumPy · FastAPI · Flask · React · Electron
                 </p>
-</div>
-</div>
-</article>
-<article class="overview-card overview-card-wide reveal">
-<span class="overview-kicker">Опыт стажировок</span>
-<div class="experience-list">
-<div class="experience-item">
-<span>Яндекс</span>
-<div>
-<h3>Проектирование роботизированных складов</h3>
-<p>
+              </div>
+            </div>
+          </article>
+          <article class="overview-card overview-card-wide reveal">
+            <span class="overview-kicker">Опыт стажировок</span>
+            <div class="experience-list">
+              <div class="experience-item">
+                <span>Яндекс</span>
+                <div>
+                  <h3>Проектирование роботизированных складов</h3>
+                  <p>
                     Работа над MarketLog / «Яндекс Топологией»: распознавание
                     плана помещения, генерация сетки и оптимальное размещение
                     стеллажей, зарядных станций и рабочих зон.
                   </p>
-</div>
-<b>Python · CV · Algorithms</b>
-</div>
-<div class="experience-item">
-<span>ГК «Геоскан»</span>
-<div>
-<h3>БПЛА, компьютерное зрение и автономные системы</h3>
-<p>
+                </div>
+                <b>Python · CV · Algorithms</b>
+              </div>
+              <div class="experience-item">
+                <span>ГК «Геоскан»</span>
+                <div>
+                  <h3>БПЛА, компьютерное зрение и автономные системы</h3>
+                  <p>
                     Проекты мониторинга сооружений и инвентаризации складов:
                     обработка аэросъёмки, детекция дефектов, планирование
                     маршрутов и управление Geoscan Pioneer.
                   </p>
-</div>
-<b>YOLO · OpenCV · Drones</b>
-</div>
-</div>
-</article>
-</div>
-</section>
-<section class="section about" id="about">
-<div class="section-label reveal"><span>02</span> Обо мне</div>
-<div class="about-grid">
-<div class="about-title reveal">
-<h2>Не просто пишу код.<br/><em>Собираю целые системы.</em></h2>
-</div>
-<div class="about-copy reveal reveal-delay-1">
-<p>
+                </div>
+                <b>YOLO · OpenCV · Drones</b>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section about" id="about">
+        <div class="section-label reveal"><span>02</span> Обо мне</div>
+        <div class="about-grid">
+          <div class="about-title reveal">
+            <h2>Не просто пишу код.<br /><em>Собираю целые системы.</em></h2>
+          </div>
+          <div class="about-copy reveal reveal-delay-1">
+            <p>
               Мне интересны задачи, где программирование встречается с реальным
               миром: датчиками, микроконтроллерами, дронами, компьютерным
               зрением и понятными пользовательскими интерфейсами.
             </p>
-<p>
+            <p>
               Люблю быстро проверять идеи, собирать рабочие прототипы и доводить
               их до продукта, который можно показать, протестировать и
               использовать.
             </p>
-<div class="availability">
-<span></span>
-<p>
-<strong>Сейчас ищу</strong> стажировку, первую работу или
+            <div class="availability">
+              <span></span>
+              <p>
+                <strong>Сейчас ищу</strong> стажировку, первую работу или
                 участие в амбициозном технологическом проекте.
               </p>
-</div>
-</div>
-</div>
-<article class="team-card reveal">
-<div class="team-card-brand">
-<span aria-hidden="true" class="brand-logo-switch"><img alt="" class="brand-logo-dark" height="85" src="assets/frogeesoft-logo.png" width="309"/><img alt="" class="brand-logo-light" height="85" src="assets/frogeesoft-logo-light.png" width="309"/></span>
-<span>Мой личный технологический проект</span>
-</div>
-<div class="team-card-copy">
-<h3>FrogeeSoft / S.I.T</h3>
-<p>FrogeeSoft / S.I.T — <strong>мой личный технологический проект</strong>. В его рамках я создаю инструменты для разработчиков, проектирую электронные устройства, собираю робототехнические системы и проверяю идеи на инженерных соревнованиях и хакатонах.</p>
-<p>Также я развиваю образовательную платформу <strong>sit-edu.ru</strong>, веду канал проекта и публикую материалы о разработке, робототехнике, электронике и собственных экспериментах.</p>
-<div class="team-directions">
-<span>Developer tools</span><span>Devices</span><span>Robotics</span><span>Competitions</span><span>Education</span>
-</div>
-<div class="team-links">
-<a href="https://sit-edu.ru" rel="noreferrer" target="_blank">Платформа <b>↗</b></a>
-<a href="https://github.com/X200L/SITeducation" rel="noreferrer" target="_blank">GitHub <b>↗</b></a>
-<a href="https://t.me/SIT_team" rel="noreferrer" target="_blank">Telegram <b>↗</b></a>
-<a href="https://youtube.com/@frogeesoft" rel="noreferrer" target="_blank">YouTube <b>↗</b></a>
-<a href="https://www.instagram.com/frogeesoft_team?utm_source=qr" rel="noreferrer" target="_blank">Instagram <b>↗</b></a></div>
-</div>
-</article>
-<div class="skills-grid">
-<article class="skill-card reveal">
-<span class="skill-index">A</span>
-<h3>Embedded &amp; Robotics</h3>
-<p>
+            </div>
+          </div>
+        </div>
+        <article class="team-card reveal">
+          <div class="team-card-brand">
+            <span aria-hidden="true" class="brand-logo-switch"
+              ><img
+                alt=""
+                class="brand-logo-dark"
+                height="85"
+                src="assets/frogeesoft-logo.png"
+                width="309" /><img
+                alt=""
+                class="brand-logo-light"
+                height="85"
+                src="assets/frogeesoft-logo-light.png"
+                width="309"
+            /></span>
+            <span>Мой личный технологический проект</span>
+          </div>
+          <div class="team-card-copy">
+            <h3>FrogeeSoft / S.I.T</h3>
+            <p>
+              FrogeeSoft / S.I.T —
+              <strong>мой личный технологический проект</strong>. В его рамках я
+              создаю инструменты для разработчиков, проектирую электронные
+              устройства, собираю робототехнические системы и проверяю идеи на
+              инженерных соревнованиях и хакатонах.
+            </p>
+            <p>
+              Также я развиваю образовательную платформу
+              <strong>sit-edu.ru</strong>, веду канал проекта и публикую
+              материалы о разработке, робототехнике, электронике и собственных
+              экспериментах.
+            </p>
+            <div class="team-directions">
+              <span>Developer tools</span><span>Devices</span
+              ><span>Robotics</span><span>Competitions</span
+              ><span>Education</span>
+            </div>
+            <div class="team-links">
+              <a href="https://sit-edu.ru" rel="noreferrer" target="_blank"
+                >Платформа <b>↗</b></a
+              >
+              <a
+                href="https://github.com/X200L/SITeducation"
+                rel="noreferrer"
+                target="_blank"
+                >GitHub <b>↗</b></a
+              >
+              <a href="https://t.me/SIT_team" rel="noreferrer" target="_blank"
+                >Telegram <b>↗</b></a
+              >
+              <a
+                href="https://youtube.com/@frogeesoft"
+                rel="noreferrer"
+                target="_blank"
+                >YouTube <b>↗</b></a
+              >
+              <a
+                href="https://www.instagram.com/frogeesoft_team?utm_source=qr"
+                rel="noreferrer"
+                target="_blank"
+                >Instagram <b>↗</b></a
+              >
+            </div>
+          </div>
+        </article>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="skill-index">A</span>
+            <h3>Embedded &amp; Robotics</h3>
+            <p>
               C, C++, Arduino, ESP32, ROS, датчики, прототипирование устройств и
               автономные системы.
             </p>
-<div class="tags">
-<span>C++</span><span>ESP32</span><span>ROS 2</span><span>Arduino</span>
-</div>
-</article>
-<article class="skill-card reveal reveal-delay-1">
-<span class="skill-index">B</span>
-<h3>AI &amp; Computer Vision</h3>
-<p>
+            <div class="tags">
+              <span>C++</span><span>ESP32</span><span>ROS 2</span
+              ><span>Arduino</span>
+            </div>
+          </article>
+          <article class="skill-card reveal reveal-delay-1">
+            <span class="skill-index">B</span>
+            <h3>AI &amp; Computer Vision</h3>
+            <p>
               Python, OpenCV, YOLO, обработка изображений, детекция объектов и
               интеграция AI в прикладные системы.
             </p>
-<div class="tags">
-<span>Python</span><span>YOLO</span><span>OpenCV</span><span>FastAPI</span>
-</div>
-</article>
-<article class="skill-card reveal reveal-delay-2">
-<span class="skill-index">C</span>
-<h3>Web &amp; Product</h3>
-<p>
+            <div class="tags">
+              <span>Python</span><span>YOLO</span><span>OpenCV</span
+              ><span>FastAPI</span>
+            </div>
+          </article>
+          <article class="skill-card reveal reveal-delay-2">
+            <span class="skill-index">C</span>
+            <h3>Web &amp; Product</h3>
+            <p>
               React, JavaScript, TypeScript, интерфейсы, адаптивная вёрстка и
               desktop-приложения.
             </p>
-<div class="tags">
-<span>React</span><span>TypeScript</span><span>JavaScript</span><span>Electron</span>
-</div>
-</article>
-</div>
-</section>
-<section class="section projects" id="projects">
-<div class="section-heading reveal">
-<div class="section-label"><span>03</span> Избранные проекты</div>
-<h2>От идеи — к <em>работающему прототипу.</em></h2>
-<p>Проекты из моего GitHub и резюме. Публичная статистика репозиториев обновляется через GitHub API при открытии сайта.</p>
-</div>
-<article class="project-featured reveal" data-repo="MarketLog">
-<a aria-label="Открыть демонстрацию Яндекс Топологии" class="project-visual project-image-featured" href="https://x200l.github.io/MarketLog/" rel="noreferrer" target="_blank">
-<img alt="Лендинг проекта Яндекс Топология с интерфейсом проектирования роботизированного склада" height="1026" src="assets/project-marketlog.webp" width="1800"/>
-<span class="project-image-badge">Яндекс · Большие вызовы</span>
-</a>
-<div class="project-info">
-<div class="project-kicker">
-<span>Featured / Yandex</span>
-<span class="repo-stats"><b data-repo-stars="">★ 3</b><b data-repo-forks="">⑂ 0</b></span>
-</div>
-<h3>MarketLog / Яндекс Топология</h3>
-<p>Сервис для проектирования роботизированных складов. Система получает план помещения, распознаёт доступные зоны, строит сетку и формирует эффективное размещение стеллажей, зарядных станций и рабочей области.</p>
-<div class="tags"><span>Python</span><span>Flask</span><span>OpenCV</span><span>Algorithms</span></div>
-<div class="project-links featured-links">
-<a href="https://github.com/X200L/MarketLog" rel="noreferrer" target="_blank">GitHub <span>↗</span></a>
-<a href="https://x200l.github.io/MarketLog/" rel="noreferrer" target="_blank">Демо <span>↗</span></a>
-<a href="https://bigchallenges.ru/topologies" rel="noreferrer" target="_blank">Страница кейса <span>↗</span></a>
-</div>
-</div>
-</article>
-<div class="project-grid">
-<article class="project-card reveal" data-repo="Warehouse-delivery-robot">
-<div class="project-card-top"><span class="project-number">01</span><span class="repo-stats"><b data-repo-stars="">★ 2</b><b data-repo-forks="">⑂ 0</b></span></div>
-<a aria-label="Warehouse Delivery Robot на GitHub" class="project-card-media" href="https://github.com/ArduRadioKot/Warehouse-delivery-robot" rel="noreferrer" target="_blank">
-<img alt="Интерфейс распознавания топологии склада с логотипом FrogeeSoft" height="928" loading="lazy" src="assets/project-warehouse.webp" width="1648"/>
-</a>
-<h3>Warehouse Delivery Robot</h3>
-<p>Комплекс для роботизации склада: наземный ROS-робот доставляет грузы, а модуль инвентаризации распознаёт план, строит граф, прокладывает маршруты и считывает QR-коды с помощью Geoscan Pioneer.</p>
-<div class="tags"><span>ROS</span><span>Python</span><span>OpenCV</span><span>ESP32</span><span>Pioneer SDK</span></div>
-<div class="project-links"><a href="https://github.com/ArduRadioKot/Warehouse-delivery-robot" rel="noreferrer" target="_blank">Код робота <span>↗</span></a><a href="https://github.com/ArduRadioKot/Hello-pioner" rel="noreferrer" target="_blank">Документация <span>↗</span></a></div>
-</article>
-<article class="project-card reveal reveal-delay-1" data-repo="Geoscan_MOPS">
-<div class="project-card-top"><span class="project-number">02</span><span class="repo-stats"><b data-repo-stars="">★ 5</b><b data-repo-forks="">⑂ 1</b></span></div>
-<a aria-label="МОПС на GitHub" class="project-card-media" href="https://github.com/ArduRadioKot/Geoscan_MOPS" rel="noreferrer" target="_blank">
-<img alt="Результат компьютерного зрения: обнаруженные трещины выделены рамками" height="932" loading="lazy" src="assets/project-mops.webp" width="1754"/>
-</a>
-<h3>МОПС — мониторинг сооружений</h3>
-<p>Система, созданная при поддержке ГК «Геоскан»: дрон собирает фотографии объекта, Metashape строит ортофотофасад, а YOLO находит трещины. Backend — FastAPI, интерфейс — React.</p>
-<div class="tags"><span>Python</span><span>React</span><span>FastAPI</span><span>YOLOv8</span><span>Metashape</span></div>
-<a href="https://github.com/ArduRadioKot/Geoscan_MOPS" rel="noreferrer" target="_blank">Подробнее <span>↗</span></a>
-</article>
-<article class="project-card reveal" data-repo="FrogeeCore">
-<div class="project-card-top"><span class="project-number">03</span><span class="repo-stats"><b data-repo-stars="">★ 13</b><b data-repo-forks="">⑂ 1</b></span></div>
-<a aria-label="FrogeeCore на GitHub" class="project-card-media" href="https://github.com/ArduRadioKot/FrogeeCore" rel="noreferrer" target="_blank">
-<img alt="Два прототипа устройства FrogeeCore с OLED-дисплеями" height="960" loading="lazy" src="assets/project-frogeecore.webp" width="1280"/>
-</a>
-<h3>FrogeeCore</h3>
-<p>Платформа для быстрого прототипирования embedded- и IoT-устройств: собственный модуль, редактор кода, язык сценариев и набор встроенных библиотек.</p>
-<div class="tags"><span>ESP32-C3</span><span>Embedded</span><span>IoT</span><span>Python</span></div>
-<a href="https://github.com/ArduRadioKot/FrogeeCore" rel="noreferrer" target="_blank">Подробнее <span>↗</span></a>
-</article>
-<article class="project-card reveal reveal-delay-1" data-repo="LogicCircuitSimulator">
-<div class="project-card-top"><span class="project-number">04</span><span class="repo-stats"><b data-repo-stars="">★ 7</b><b data-repo-forks="">⑂ 1</b></span></div>
-<a aria-label="Logic Circuit Simulator на GitHub" class="project-card-media media-contain media-dark" href="https://github.com/ArduRadioKot/LogicCircuitSimulator" rel="noreferrer" target="_blank">
-<img alt="Презентационный экран симулятора логических схем" height="521" loading="lazy" src="assets/project-logic.webp" width="1400"/>
-</a>
-<h3>Logic Circuit Simulator</h3>
-<p>Графический редактор цифровых схем с drag-and-drop, логическими элементами и симуляцией сигналов в реальном времени.</p>
-<div class="tags"><span>Python</span><span>Tkinter</span><span>Simulation</span></div>
-<a href="https://github.com/ArduRadioKot/LogicCircuitSimulator" rel="noreferrer" target="_blank">Подробнее <span>↗</span></a>
-</article>
-<article class="project-card reveal" data-repo="FgSNotes">
-<div class="project-card-top"><span class="project-number">05</span><span class="repo-stats"><b data-repo-stars="">★ 7</b><b data-repo-forks="">⑂ 0</b></span></div>
-<a aria-label="FgSNotes на GitHub" class="project-card-media" href="https://github.com/ArduRadioKot/FgSNotes" rel="noreferrer" target="_blank">
-<img alt="Интерфейс Markdown-редактора FgSNotes с редактором и предпросмотром" height="933" loading="lazy" src="assets/project-fgsnotes.webp" width="1400"/>
-</a>
-<h3>FgSNotes</h3>
-<p>Кроссплатформенный Markdown-редактор с предпросмотром, подсветкой синтаксиса, темами, вкладками и системой плагинов.</p>
-<div class="tags"><span>Electron</span><span>JavaScript</span><span>Markdown</span></div>
-<a href="https://github.com/ArduRadioKot/FgSNotes" rel="noreferrer" target="_blank">Подробнее <span>↗</span></a>
-</article>
-<article class="project-card reveal reveal-delay-1" data-repo="ecoCheck-library">
-<div class="project-card-top"><span class="project-number">06</span><span class="repo-stats"><b data-repo-stars="">★ 5</b><b data-repo-forks="">⑂ 0</b></span></div>
-<a aria-label="EcoCheck на GitHub" class="project-card-media media-contain media-light" href="https://github.com/ArduRadioKot/ecoCheck-library" rel="noreferrer" target="_blank">
-<img alt="Интерфейс EcoCheck на ноутбуке и смартфонах" height="412" loading="lazy" src="assets/project-ecocheck.webp" width="1400"/>
-</a>
-<h3>EcoCheck</h3>
-<p>Библиотека и платформа для объединения датчиков качества воздуха в единую сеть и удобной работы с экологическими данными.</p>
-<div class="tags"><span>C++</span><span>ESP8266</span><span>Sensors</span><span>Network</span></div>
-<a href="https://github.com/ArduRadioKot/ecoCheck-library" rel="noreferrer" target="_blank">Подробнее <span>↗</span></a>
-</article>
-<article class="project-card reveal" data-repo="yasno-service">
-<div class="project-card-top"><span class="project-number">07</span><span class="repo-stats"><b data-repo-stars="">★ 0</b><b data-repo-forks="">⑂ 0</b></span></div>
-<a aria-label="Ясно на GitHub" class="project-card-media" href="https://github.com/ArduRadioKot/yasno-service" rel="noreferrer" target="_blank">
-<img alt="Лендинг образовательной платформы Ясно с AI-ментором" height="1010" loading="lazy" src="assets/project-yasno.webp" width="1800"/>
-</a>
-<h3>Ясно</h3>
-<p>AI-наставник для подготовки к ОГЭ и ЕГЭ: помогает разбирать учебные темы, строить план занятий и получать понятные объяснения.</p>
-<div class="tags"><span>TypeScript</span><span>AI</span><span>Education</span></div>
-<a href="https://github.com/ArduRadioKot/yasno-service" rel="noreferrer" target="_blank">Подробнее <span>↗</span></a>
-</article>
-<article class="project-card reveal reveal-delay-1" data-repo="FgSdrones">
-<div class="project-card-top"><span class="project-number">08</span><span class="repo-stats"><b data-repo-stars="">★ 4</b><b data-repo-forks="">⑂ 3</b></span></div>
-<a aria-label="FgS Drones на GitHub" class="project-card-media" href="https://github.com/ArduRadioKot/FgSdrones" rel="noreferrer" target="_blank">
-<img alt="Веб-симулятор программирования дрона FgS Drones" height="793" loading="lazy" src="assets/project-fgsdrones.webp" width="1400"/>
-</a>
-<h3>FgS Drones</h3>
-<p>Открытая образовательная экосистема для сборки и программирования дронов с собственным языком FGSD, редактором и веб-симулятором.</p>
-<div class="tags"><span>Drones</span><span>RISC-V</span><span>Simulator</span><span>Language Design</span></div>
-<a href="https://github.com/ArduRadioKot/FgSdrones" rel="noreferrer" target="_blank">Подробнее <span>↗</span></a>
-</article>
-</div>
-<div class="all-projects reveal">
-<p>Больше desktop-, web-, embedded- и робототехнических проектов — в профиле GitHub.</p>
-<a class="button button-secondary" href="https://github.com/ArduRadioKot?tab=repositories" rel="noreferrer" target="_blank">Все репозитории <span>↗</span></a>
-</div>
-</section>
-<section class="section achievements" id="achievements">
-<div class="section-heading reveal">
-<div class="section-label"><span>04</span> Достижения</div>
-<h2>
-            Соревнования как способ<br/><em>проверять идеи на прочность.</em>
-</h2>
-</div>
-<div class="achievement-list">
-<article class="achievement reveal">
-<span class="achievement-year">2025</span>
-<div>
-<small>Победитель</small>
-<h3>
+            <div class="tags">
+              <span>React</span><span>TypeScript</span><span>JavaScript</span
+              ><span>Electron</span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section projects" id="projects">
+        <div class="section-heading reveal">
+          <div class="section-label"><span>03</span> Избранные проекты</div>
+          <h2>От идеи — к <em>работающему прототипу.</em></h2>
+          <p>
+            Проекты из моего GitHub и резюме. Публичная статистика репозиториев
+            обновляется через GitHub API при открытии сайта.
+          </p>
+        </div>
+        <article class="project-featured reveal" data-repo="MarketLog">
+          <a
+            aria-label="Открыть демонстрацию Яндекс Топологии"
+            class="project-visual project-image-featured"
+            href="https://x200l.github.io/MarketLog/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Лендинг проекта Яндекс Топология с интерфейсом проектирования роботизированного склада"
+              height="1026"
+              src="assets/project-marketlog.webp"
+              width="1800"
+            />
+            <span class="project-image-badge">Яндекс · Большие вызовы</span>
+          </a>
+          <div class="project-info">
+            <div class="project-kicker">
+              <span>Featured / Yandex</span>
+              <span class="repo-stats"
+                ><b data-repo-stars="">★ 3</b
+                ><b data-repo-forks="">⑂ 0</b></span
+              >
+            </div>
+            <h3>MarketLog / Яндекс Топология</h3>
+            <p>
+              Сервис для проектирования роботизированных складов. Система
+              получает план помещения, распознаёт доступные зоны, строит сетку и
+              формирует эффективное размещение стеллажей, зарядных станций и
+              рабочей области.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>Flask</span><span>OpenCV</span
+              ><span>Algorithms</span>
+            </div>
+            <div class="project-links featured-links">
+              <a
+                href="https://github.com/X200L/MarketLog"
+                rel="noreferrer"
+                target="_blank"
+                >GitHub <span>↗</span></a
+              >
+              <a
+                href="https://x200l.github.io/MarketLog/"
+                rel="noreferrer"
+                target="_blank"
+                >Демо <span>↗</span></a
+              >
+              <a
+                href="https://bigchallenges.ru/topologies"
+                rel="noreferrer"
+                target="_blank"
+                >Страница кейса <span>↗</span></a
+              >
+            </div>
+          </div>
+        </article>
+        <div class="project-grid">
+          <article
+            class="project-card reveal"
+            data-repo="Warehouse-delivery-robot"
+          >
+            <div class="project-card-top">
+              <span class="project-number">01</span
+              ><span class="repo-stats"
+                ><b data-repo-stars="">★ 2</b
+                ><b data-repo-forks="">⑂ 0</b></span
+              >
+            </div>
+            <a
+              aria-label="Warehouse Delivery Robot на GitHub"
+              class="project-card-media"
+              href="https://github.com/ArduRadioKot/Warehouse-delivery-robot"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Интерфейс распознавания топологии склада с логотипом FrogeeSoft"
+                height="928"
+                loading="lazy"
+                src="assets/project-warehouse.webp"
+                width="1648"
+              />
+            </a>
+            <h3>Warehouse Delivery Robot</h3>
+            <p>
+              Комплекс для роботизации склада: наземный ROS-робот доставляет
+              грузы, а модуль инвентаризации распознаёт план, строит граф,
+              прокладывает маршруты и считывает QR-коды с помощью Geoscan
+              Pioneer.
+            </p>
+            <div class="tags">
+              <span>ROS</span><span>Python</span><span>OpenCV</span
+              ><span>ESP32</span><span>Pioneer SDK</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/ArduRadioKot/Warehouse-delivery-robot"
+                rel="noreferrer"
+                target="_blank"
+                >Код робота <span>↗</span></a
+              ><a
+                href="https://github.com/ArduRadioKot/Hello-pioner"
+                rel="noreferrer"
+                target="_blank"
+                >Документация <span>↗</span></a
+              >
+            </div>
+          </article>
+          <article
+            class="project-card reveal reveal-delay-1"
+            data-repo="Geoscan_MOPS"
+          >
+            <div class="project-card-top">
+              <span class="project-number">02</span
+              ><span class="repo-stats"
+                ><b data-repo-stars="">★ 5</b
+                ><b data-repo-forks="">⑂ 1</b></span
+              >
+            </div>
+            <a
+              aria-label="МОПС на GitHub"
+              class="project-card-media"
+              href="https://github.com/ArduRadioKot/Geoscan_MOPS"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Результат компьютерного зрения: обнаруженные трещины выделены рамками"
+                height="932"
+                loading="lazy"
+                src="assets/project-mops.webp"
+                width="1754"
+              />
+            </a>
+            <h3>МОПС — мониторинг сооружений</h3>
+            <p>
+              Система, созданная при поддержке ГК «Геоскан»: дрон собирает
+              фотографии объекта, Metashape строит ортофотофасад, а YOLO находит
+              трещины. Backend — FastAPI, интерфейс — React.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>React</span><span>FastAPI</span
+              ><span>YOLOv8</span><span>Metashape</span>
+            </div>
+            <a
+              href="https://github.com/ArduRadioKot/Geoscan_MOPS"
+              rel="noreferrer"
+              target="_blank"
+              >Подробнее <span>↗</span></a
+            >
+          </article>
+          <article class="project-card reveal" data-repo="FrogeeCore">
+            <div class="project-card-top">
+              <span class="project-number">03</span
+              ><span class="repo-stats"
+                ><b data-repo-stars="">★ 13</b
+                ><b data-repo-forks="">⑂ 1</b></span
+              >
+            </div>
+            <a
+              aria-label="FrogeeCore на GitHub"
+              class="project-card-media"
+              href="https://github.com/ArduRadioKot/FrogeeCore"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Два прототипа устройства FrogeeCore с OLED-дисплеями"
+                height="960"
+                loading="lazy"
+                src="assets/project-frogeecore.webp"
+                width="1280"
+              />
+            </a>
+            <h3>FrogeeCore</h3>
+            <p>
+              Платформа для быстрого прототипирования embedded- и IoT-устройств:
+              собственный модуль, редактор кода, язык сценариев и набор
+              встроенных библиотек.
+            </p>
+            <div class="tags">
+              <span>ESP32-C3</span><span>Embedded</span><span>IoT</span
+              ><span>Python</span>
+            </div>
+            <a
+              href="https://github.com/ArduRadioKot/FrogeeCore"
+              rel="noreferrer"
+              target="_blank"
+              >Подробнее <span>↗</span></a
+            >
+          </article>
+          <article
+            class="project-card reveal reveal-delay-1"
+            data-repo="LogicCircuitSimulator"
+          >
+            <div class="project-card-top">
+              <span class="project-number">04</span
+              ><span class="repo-stats"
+                ><b data-repo-stars="">★ 7</b
+                ><b data-repo-forks="">⑂ 1</b></span
+              >
+            </div>
+            <a
+              aria-label="Logic Circuit Simulator на GitHub"
+              class="project-card-media media-contain media-dark"
+              href="https://github.com/ArduRadioKot/LogicCircuitSimulator"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Презентационный экран симулятора логических схем"
+                height="521"
+                loading="lazy"
+                src="assets/project-logic.webp"
+                width="1400"
+              />
+            </a>
+            <h3>Logic Circuit Simulator</h3>
+            <p>
+              Графический редактор цифровых схем с drag-and-drop, логическими
+              элементами и симуляцией сигналов в реальном времени.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>Tkinter</span><span>Simulation</span>
+            </div>
+            <a
+              href="https://github.com/ArduRadioKot/LogicCircuitSimulator"
+              rel="noreferrer"
+              target="_blank"
+              >Подробнее <span>↗</span></a
+            >
+          </article>
+          <article class="project-card reveal" data-repo="FgSNotes">
+            <div class="project-card-top">
+              <span class="project-number">05</span
+              ><span class="repo-stats"
+                ><b data-repo-stars="">★ 7</b
+                ><b data-repo-forks="">⑂ 0</b></span
+              >
+            </div>
+            <a
+              aria-label="FgSNotes на GitHub"
+              class="project-card-media"
+              href="https://github.com/ArduRadioKot/FgSNotes"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Интерфейс Markdown-редактора FgSNotes с редактором и предпросмотром"
+                height="933"
+                loading="lazy"
+                src="assets/project-fgsnotes.webp"
+                width="1400"
+              />
+            </a>
+            <h3>FgSNotes</h3>
+            <p>
+              Кроссплатформенный Markdown-редактор с предпросмотром, подсветкой
+              синтаксиса, темами, вкладками и системой плагинов.
+            </p>
+            <div class="tags">
+              <span>Electron</span><span>JavaScript</span><span>Markdown</span>
+            </div>
+            <a
+              href="https://github.com/ArduRadioKot/FgSNotes"
+              rel="noreferrer"
+              target="_blank"
+              >Подробнее <span>↗</span></a
+            >
+          </article>
+          <article
+            class="project-card reveal reveal-delay-1"
+            data-repo="ecoCheck-library"
+          >
+            <div class="project-card-top">
+              <span class="project-number">06</span
+              ><span class="repo-stats"
+                ><b data-repo-stars="">★ 5</b
+                ><b data-repo-forks="">⑂ 0</b></span
+              >
+            </div>
+            <a
+              aria-label="EcoCheck на GitHub"
+              class="project-card-media media-contain media-light"
+              href="https://github.com/ArduRadioKot/ecoCheck-library"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Интерфейс EcoCheck на ноутбуке и смартфонах"
+                height="412"
+                loading="lazy"
+                src="assets/project-ecocheck.webp"
+                width="1400"
+              />
+            </a>
+            <h3>EcoCheck</h3>
+            <p>
+              Библиотека и платформа для объединения датчиков качества воздуха в
+              единую сеть и удобной работы с экологическими данными.
+            </p>
+            <div class="tags">
+              <span>C++</span><span>ESP8266</span><span>Sensors</span
+              ><span>Network</span>
+            </div>
+            <a
+              href="https://github.com/ArduRadioKot/ecoCheck-library"
+              rel="noreferrer"
+              target="_blank"
+              >Подробнее <span>↗</span></a
+            >
+          </article>
+          <article class="project-card reveal" data-repo="yasno-service">
+            <div class="project-card-top">
+              <span class="project-number">07</span
+              ><span class="repo-stats"
+                ><b data-repo-stars="">★ 0</b
+                ><b data-repo-forks="">⑂ 0</b></span
+              >
+            </div>
+            <a
+              aria-label="Ясно на GitHub"
+              class="project-card-media"
+              href="https://github.com/ArduRadioKot/yasno-service"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Лендинг образовательной платформы Ясно с AI-ментором"
+                height="1010"
+                loading="lazy"
+                src="assets/project-yasno.webp"
+                width="1800"
+              />
+            </a>
+            <h3>Ясно</h3>
+            <p>
+              AI-наставник для подготовки к ОГЭ и ЕГЭ: помогает разбирать
+              учебные темы, строить план занятий и получать понятные объяснения.
+            </p>
+            <div class="tags">
+              <span>TypeScript</span><span>AI</span><span>Education</span>
+            </div>
+            <a
+              href="https://github.com/ArduRadioKot/yasno-service"
+              rel="noreferrer"
+              target="_blank"
+              >Подробнее <span>↗</span></a
+            >
+          </article>
+          <article
+            class="project-card reveal reveal-delay-1"
+            data-repo="FgSdrones"
+          >
+            <div class="project-card-top">
+              <span class="project-number">08</span
+              ><span class="repo-stats"
+                ><b data-repo-stars="">★ 4</b
+                ><b data-repo-forks="">⑂ 3</b></span
+              >
+            </div>
+            <a
+              aria-label="FgS Drones на GitHub"
+              class="project-card-media"
+              href="https://github.com/ArduRadioKot/FgSdrones"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Веб-симулятор программирования дрона FgS Drones"
+                height="793"
+                loading="lazy"
+                src="assets/project-fgsdrones.webp"
+                width="1400"
+              />
+            </a>
+            <h3>FgS Drones</h3>
+            <p>
+              Открытая образовательная экосистема для сборки и программирования
+              дронов с собственным языком FGSD, редактором и веб-симулятором.
+            </p>
+            <div class="tags">
+              <span>Drones</span><span>RISC-V</span><span>Simulator</span
+              ><span>Language Design</span>
+            </div>
+            <a
+              href="https://github.com/ArduRadioKot/FgSdrones"
+              rel="noreferrer"
+              target="_blank"
+              >Подробнее <span>↗</span></a
+            >
+          </article>
+        </div>
+        <div class="all-projects reveal">
+          <p>
+            Больше desktop-, web-, embedded- и робототехнических проектов — в
+            профиле GitHub.
+          </p>
+          <a
+            class="button button-secondary"
+            href="https://github.com/ArduRadioKot?tab=repositories"
+            rel="noreferrer"
+            target="_blank"
+            >Все репозитории <span>↗</span></a
+          >
+        </div>
+      </section>
+      <section class="section achievements" id="achievements">
+        <div class="section-heading reveal">
+          <div class="section-label"><span>04</span> Достижения</div>
+          <h2>
+            Соревнования как способ<br /><em>проверять идеи на прочность.</em>
+          </h2>
+        </div>
+        <div class="achievement-list">
+          <article class="achievement reveal">
+            <span class="achievement-year">2025</span>
+            <div>
+              <small>Победитель</small>
+              <h3>
                 Всероссийский конкурс научно-технических проектов «Большие
                 вызовы»
               </h3>
-</div>
-<b>01</b>
-</article>
-<article class="achievement reveal">
-<span class="achievement-year">2026</span>
-<div>
-<small>Победитель</small>
-<h3>Всероссийский конкурс научных работ «Спутник»</h3>
-</div>
-<b>02</b>
-</article>
-<article class="achievement reveal">
-<span class="achievement-year">2026</span>
-<div>
-<small>Призёр регионального этапа</small>
-<h3>
+            </div>
+            <b>01</b>
+          </article>
+          <article class="achievement reveal">
+            <span class="achievement-year">2026</span>
+            <div>
+              <small>Победитель</small>
+              <h3>Всероссийский конкурс научных работ «Спутник»</h3>
+            </div>
+            <b>02</b>
+          </article>
+          <article class="achievement reveal">
+            <span class="achievement-year">2026</span>
+            <div>
+              <small>Призёр регионального этапа</small>
+              <h3>
                 Всероссийская олимпиада школьников по технологии и информатике
               </h3>
-</div>
-<b>03</b>
-</article>
-<article class="achievement reveal">
-<span class="achievement-year">2026</span>
-<div>
-<small>Участник</small>
-<h3>
+            </div>
+            <b>03</b>
+          </article>
+          <article class="achievement reveal">
+            <span class="achievement-year">2026</span>
+            <div>
+              <small>Участник</small>
+              <h3>
                 Международный научный съезд школьников и Конгресс молодых учёных
               </h3>
-</div>
-<b>04</b>
-</article>
-<article class="achievement reveal">
-<span class="achievement-year">2026</span>
-<div>
-<small>Финалист</small>
-<h3>Национальная технологическая олимпиада</h3>
-</div>
-<b>05</b>
-</article>
-<article class="achievement reveal">
-<span class="achievement-year">2025</span>
-<div>
-<small>Призёр</small>
-<h3>Кейс-чемпионат «Ключ» НИУ ВШЭ</h3>
-</div>
-<b>06</b>
-</article>
-<article class="achievement reveal">
-<span class="achievement-year">2025</span>
-<div>
-<small>Победитель</small>
-<h3>Кейс-чемпионат «Капча»</h3>
-</div>
-<b>07</b>
-</article>
-<article class="achievement reveal">
-<span class="achievement-year">—</span>
-<div>
-<small>Победитель</small>
-<h3>Конкурс по робототехнике «Hello, Pioneer» от ГК «Геоскан»</h3>
-</div>
-<b>08</b>
-</article>
-</div>
-</section>
-<section class="section principles">
-<div class="section-label reveal"><span>05</span> Как я работаю</div>
-<div class="principles-grid">
-<div class="principle reveal">
-<span>01</span>
-<h3>Сначала — рабочий прототип</h3>
-<p>
+            </div>
+            <b>04</b>
+          </article>
+          <article class="achievement reveal">
+            <span class="achievement-year">2026</span>
+            <div>
+              <small>Финалист</small>
+              <h3>Национальная технологическая олимпиада</h3>
+            </div>
+            <b>05</b>
+          </article>
+          <article class="achievement reveal">
+            <span class="achievement-year">2025</span>
+            <div>
+              <small>Призёр</small>
+              <h3>Кейс-чемпионат «Ключ» НИУ ВШЭ</h3>
+            </div>
+            <b>06</b>
+          </article>
+          <article class="achievement reveal">
+            <span class="achievement-year">2025</span>
+            <div>
+              <small>Победитель</small>
+              <h3>Кейс-чемпионат «Капча»</h3>
+            </div>
+            <b>07</b>
+          </article>
+          <article class="achievement reveal">
+            <span class="achievement-year">—</span>
+            <div>
+              <small>Победитель</small>
+              <h3>Конкурс по робототехнике «Hello, Pioneer» от ГК «Геоскан»</h3>
+            </div>
+            <b>08</b>
+          </article>
+        </div>
+      </section>
+      <section class="section principles">
+        <div class="section-label reveal"><span>05</span> Как я работаю</div>
+        <div class="principles-grid">
+          <div class="principle reveal">
+            <span>01</span>
+            <h3>Сначала — рабочий прототип</h3>
+            <p>
               Быстро собираю минимальную версию, проверяю ключевую гипотезу и
               только потом усложняю систему.
             </p>
-</div>
-<div class="principle reveal reveal-delay-1">
-<span>02</span>
-<h3>Думаю системой</h3>
-<p>
+          </div>
+          <div class="principle reveal reveal-delay-1">
+            <span>02</span>
+            <h3>Думаю системой</h3>
+            <p>
               Связываю железо, алгоритмы, API и интерфейс так, чтобы продукт
               работал как единое целое.
             </p>
-</div>
-<div class="principle reveal reveal-delay-2">
-<span>03</span>
-<h3>Учусь через практику</h3>
-<p>
+          </div>
+          <div class="principle reveal reveal-delay-2">
+            <span>03</span>
+            <h3>Учусь через практику</h3>
+            <p>
               Осваиваю новые технологии под реальную задачу и сразу использую их
               в проекте.
             </p>
-</div>
-</div>
-</section>
-<section class="section contact" id="contact">
-<div class="contact-card reveal">
-<div class="contact-copy">
-<div class="section-label"><span>06</span> Контакты</div>
-<h2>Есть интересная задача?<br/><em>Давайте обсудим.</em></h2>
-<p>
+          </div>
+        </div>
+      </section>
+      <section class="section contact" id="contact">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <div class="section-label"><span>06</span> Контакты</div>
+            <h2>Есть интересная задача?<br /><em>Давайте обсудим.</em></h2>
+            <p>
               Готов к стажировке, первой работе, хакатонам и совместной
               разработке технологических продуктов.
             </p>
-</div>
-<div class="contact-actions">
-<a class="contact-link" href="mailto:frogeesoft.team@gmail.com"><span>Email</span><strong>frogeesoft.team@gmail.com</strong><b>↗</b></a>
-<a class="contact-link" href="https://github.com/ArduRadioKot" rel="noreferrer" target="_blank"><span>GitHub</span><strong>@ArduRadioKot</strong><b>↗</b></a>
-<a class="contact-link" href="https://sit-edu.ru" rel="noreferrer" target="_blank"><span>Website</span><strong>sit-edu.ru</strong><b>↗</b></a>
-<a class="contact-link" href="https://t.me/SIT_team" rel="noreferrer" target="_blank"><span>Telegram</span><strong>@SIT_team</strong><b>↗</b></a>
-<a class="contact-link" href="https://www.instagram.com/frogeesoft_team?utm_source=qr" rel="noreferrer" target="_blank"><span>Instagram</span><strong>@frogeesoft_team</strong><b>↗</b></a></div>
-<button class="print-button" data-print="" type="button">
-<span>Сохранить как PDF</span><b>↓</b>
-</button>
-</div>
-</section>
-</main>
-<footer>
-<a class="brand brand-logo-link footer-logo" href="#top"><span aria-hidden="true" class="brand-logo-switch">
-<img alt="" class="brand-logo-dark" height="85" src="assets/frogeesoft-logo.png" width="309"/>
-<img alt="" class="brand-logo-light" height="85" src="assets/frogeesoft-logo-light.png" width="309"/>
-</span></a>
-<p>Сделано с вниманием к деталям · <span data-year="">2026</span></p>
-<a href="#top">Наверх ↑</a>
-</footer>
-<noscript><div class="noscript">
+          </div>
+          <div class="contact-actions">
+            <a class="contact-link" href="mailto:frogeesoft.team@gmail.com"
+              ><span>Email</span><strong>frogeesoft.team@gmail.com</strong
+              ><b>↗</b></a
+            >
+            <a
+              class="contact-link"
+              href="https://github.com/ArduRadioKot"
+              rel="noreferrer"
+              target="_blank"
+              ><span>GitHub</span><strong>@ArduRadioKot</strong><b>↗</b></a
+            >
+            <a
+              class="contact-link"
+              href="https://sit-edu.ru"
+              rel="noreferrer"
+              target="_blank"
+              ><span>Website</span><strong>sit-edu.ru</strong><b>↗</b></a
+            >
+            <a
+              class="contact-link"
+              href="https://t.me/SIT_team"
+              rel="noreferrer"
+              target="_blank"
+              ><span>Telegram</span><strong>@SIT_team</strong><b>↗</b></a
+            >
+            <a
+              class="contact-link"
+              href="https://www.instagram.com/frogeesoft_team?utm_source=qr"
+              rel="noreferrer"
+              target="_blank"
+              ><span>Instagram</span><strong>@frogeesoft_team</strong
+              ><b>↗</b></a
+            >
+          </div>
+          <button class="print-button" data-print="" type="button">
+            <span>Сохранить как PDF</span><b>↓</b>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a class="brand brand-logo-link footer-logo" href="#top"
+        ><span aria-hidden="true" class="brand-logo-switch">
+          <img
+            alt=""
+            class="brand-logo-dark"
+            height="85"
+            src="assets/frogeesoft-logo.png"
+            width="309"
+          />
+          <img
+            alt=""
+            class="brand-logo-light"
+            height="85"
+            src="assets/frogeesoft-logo-light.png"
+            width="309"
+          /> </span
+      ></a>
+      <p>Сделано с вниманием к деталям · <span data-year="">2026</span></p>
+      <a href="#top">Наверх ↑</a>
+    </footer>
+    <noscript
+      ><div class="noscript">
         Для анимаций и актуальной статистики GitHub включите JavaScript.
-      </div></noscript>
-</body>
+      </div></noscript
+    >
+  </body>
 </html>
