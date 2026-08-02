@@ -22,7 +22,6 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
-    <div aria-hidden="true" class="cursor-glow"></div>
     <div aria-hidden="true" class="page-noise"></div>
     <header class="site-header" data-header="">
       <a
@@ -49,9 +48,9 @@
       </a>
       <nav aria-label="Основная навигация" class="desktop-nav">
         <a href="#info">Основная информация</a>
-        <a href="#about">Обо мне</a>
         <a href="#projects">Проекты</a>
         <a href="#achievements">Достижения</a>
+        <a href="#about">Личный проект</a>
         <a href="#contact">Контакты</a>
       </nav>
       <div class="header-actions">
@@ -84,22 +83,22 @@
     </header>
     <div aria-hidden="true" class="mobile-menu" data-mobile-menu="">
       <a href="#info">Основная информация</a>
-      <a href="#about">Обо мне</a>
       <a href="#projects">Проекты</a>
       <a href="#achievements">Достижения</a>
+      <a href="#about">Личный проект</a>
       <a href="#contact">Контакты</a>
     </div>
     <main id="main">
       <section class="hero section" id="top">
         <div class="hero-copy reveal">
           <h1>
-            Привет, я <span>Александр.</span><br />Создаю технологии,<br />которые
-            работают.
+            Привет, я <span>Александр.</span><br />
+            FullStack/ Embedded-разработчик.
           </h1>
           <p class="hero-lead">
-            Разработчик и инженер. Собираю продукты на стыке embedded,
-            робототехники, искусственного интеллекта и web — от IoT-платформ до
-            автономных роботов и систем компьютерного зрения.
+            Инженер-разработчик и студент Научно-технологического университета
+            «Сириус». Работаю с робототехникой, embedded-системами, компьютерным
+            зрением и fullstack-продуктами.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects"
@@ -152,218 +151,108 @@
       </section>
       <section aria-label="Ключевые направления" class="marquee">
         <div class="marquee-track">
-          <span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i
-          ><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i
-          ><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
-          <span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i
-          ><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i
-          ><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
+          <div class="marquee-group">
+            <span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i
+            ><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i
+            ><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
+          </div>
+          <div aria-hidden="true" class="marquee-group">
+            <span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i
+            ><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i
+            ><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
+          </div>
         </div>
       </section>
-      <section class="section profile-overview" id="info">
-        <div class="section-heading reveal">
-          <div class="section-label"><span>01</span> Основная информация</div>
-          <h2>Основная информация</h2>
-          <p>
-            Учусь, разрабатываю собственные продукты и получаю опыт на реальных
-            задачах от технологических компаний.
-          </p>
+
+      <section class="section about-compact-section has-section-rail" id="info">
+        <div class="section-rail" aria-hidden="true">
+          <span>Обо мне</span><strong>01</strong>
         </div>
-        <div class="overview-grid">
-          <article class="overview-card reveal">
-            <span class="overview-kicker">Образование</span>
+        <div class="section-heading reveal about-compact-heading">
+          <div class="section-label"><span>01</span> Коротко обо мне</div>
+          <h2>Немного обо мне, <em>образовании и опыте.</em></h2>
+        </div>
+
+        <div class="about-compact-grid">
+          <article class="about-card reveal">
+            <span class="about-card-kicker">Образование</span>
             <h3>Научно-технологический университет «Сириус»</h3>
             <p>
               Студент 1 курса. Развиваюсь в программной инженерии, робототехнике
               и создании сложных технологических систем.
             </p>
-            <div class="fact-line"><b>01</b><span>курс</span></div>
+            <div class="about-card-foot">
+              <strong>01</strong><span>курс</span>
+            </div>
           </article>
-          <article
-            class="overview-card overview-card-stack reveal reveal-delay-1"
-          >
-            <span class="overview-kicker">Основной стек</span>
-            <h3>От микроконтроллера до интерфейса</h3>
-            <div class="stack-groups">
-              <div>
-                <small>Languages</small>
-                <p>C · C++ · Python · JavaScript · TypeScript</p>
+
+          <article class="about-card reveal reveal-delay-1">
+            <span class="about-card-kicker">Основной стек</span>
+            <div class="stack-list">
+              <div class="stack-item">
+                <span>Languages</span
+                ><strong>C · C++ · Python · JavaScript · TypeScript</strong>
               </div>
-              <div>
-                <small>Robotics / Embedded</small>
-                <p>ROS / ROS 2 · ESP32 · Arduino · Pioneer SDK · MAVLink</p>
+              <div class="stack-item">
+                <span>Robotics / Embedded</span
+                ><strong
+                  >ROS / ROS 2 · ESP32 · Arduino · Pioneer SDK · MAVLink</strong
+                >
               </div>
-              <div>
-                <small>AI / Backend / Web</small>
-                <p>
-                  OpenCV · YOLO · NumPy · FastAPI · Flask · React · Electron
-                </p>
+              <div class="stack-item">
+                <span>AI / Backend / Web</span
+                ><strong
+                  >OpenCV · YOLO · NumPy · FastAPI · PyTorch· React ·
+                  Electron</strong
+                >
               </div>
             </div>
           </article>
-          <article class="overview-card overview-card-wide reveal">
-            <span class="overview-kicker">Опыт стажировок</span>
+
+          <article class="about-card about-card-wide reveal">
+            <span class="about-card-kicker">Опыт стажировок</span>
             <div class="experience-list">
               <div class="experience-item">
-                <span>Яндекс</span>
-                <div>
-                  <h3>Проектирование роботизированных складов</h3>
+                <div class="experience-meta">Яндекс</div>
+                <div class="experience-copy">
+                  <h3>Разработка сервиса «Яндекс Топология»</h3>
                   <p>
-                    Работа над MarketLog / «Яндекс Топологией»: распознавание
-                    плана помещения, генерация сетки и оптимальное размещение
+                    Работа над «Яндекс Топологией»: распознавание плана
+                    помещения, генерация сетки и оптимальное размещение
                     стеллажей, зарядных станций и рабочих зон.
                   </p>
                 </div>
-                <b>Python · CV · Algorithms</b>
+                <div class="experience-tags">Python · CV · Algorithms</div>
               </div>
               <div class="experience-item">
-                <span>ГК «Геоскан»</span>
-                <div>
-                  <h3>БПЛА, компьютерное зрение и автономные системы</h3>
+                <div class="experience-meta">ГК «Геоскан»</div>
+                <div class="experience-copy">
+                  <h3>
+                    Сервис мониторинга и обследования зданий на предмет
+                    повреждений
+                  </h3>
                   <p>
-                    Проекты мониторинга сооружений и инвентаризации складов:
-                    обработка аэросъёмки, детекция дефектов, планирование
-                    маршрутов и управление Geoscan Pioneer.
+                    Проекты мониторинга и автоматизации: обработка
+                    аэрофотосъёмки, детекция дефектов, разработка систем
+                    управления и прототипирование инженерных решений.
                   </p>
                 </div>
-                <b>YOLO · OpenCV · Drones</b>
+                <div class="experience-tags">
+                  YOLO · OpenCV · Geoscan Pioneer
+                </div>
               </div>
             </div>
           </article>
         </div>
       </section>
-      <section class="section about" id="about">
-        <div class="section-label reveal"><span>02</span> Обо мне</div>
-        <div class="about-grid">
-          <div class="about-title reveal">
-            <h2>Не просто пишу код.<br /><em>Собираю целые системы.</em></h2>
-          </div>
-          <div class="about-copy reveal reveal-delay-1">
-            <p>
-              Мне интересны задачи, где программирование встречается с реальным
-              миром: датчиками, микроконтроллерами, дронами, компьютерным
-              зрением и понятными пользовательскими интерфейсами.
-            </p>
-            <p>
-              Люблю быстро проверять идеи, собирать рабочие прототипы и доводить
-              их до продукта, который можно показать, протестировать и
-              использовать.
-            </p>
-            <div class="availability">
-              <span></span>
-              <p>
-                <strong>Сейчас ищу</strong> стажировку, первую работу или
-                участие в амбициозном технологическом проекте.
-              </p>
-            </div>
-          </div>
+
+      <section class="section projects has-section-rail" id="projects">
+        <div class="section-rail" aria-hidden="true">
+          <span>Избранные проекты</span><strong>02</strong>
         </div>
-        <article class="team-card reveal">
-          <div class="team-card-brand">
-            <span aria-hidden="true" class="brand-logo-switch"
-              ><img
-                alt=""
-                class="brand-logo-dark"
-                height="85"
-                src="assets/frogeesoft-logo.png"
-                width="309" /><img
-                alt=""
-                class="brand-logo-light"
-                height="85"
-                src="assets/frogeesoft-logo-light.png"
-                width="309"
-            /></span>
-            <span>Мой личный технологический проект</span>
-          </div>
-          <div class="team-card-copy">
-            <h3>FrogeeSoft / S.I.T</h3>
-            <p>
-              FrogeeSoft / S.I.T —
-              <strong>мой личный технологический проект</strong>. В его рамках я
-              создаю инструменты для разработчиков, проектирую электронные
-              устройства, собираю робототехнические системы и проверяю идеи на
-              инженерных соревнованиях и хакатонах.
-            </p>
-            <p>
-              Также я развиваю образовательную платформу
-              <strong>sit-edu.ru</strong>, веду канал проекта и публикую
-              материалы о разработке, робототехнике, электронике и собственных
-              экспериментах.
-            </p>
-            <div class="team-directions">
-              <span>Developer tools</span><span>Devices</span
-              ><span>Robotics</span><span>Competitions</span
-              ><span>Education</span>
-            </div>
-            <div class="team-links">
-              <a href="https://sit-edu.ru" rel="noreferrer" target="_blank"
-                >Платформа <b>↗</b></a
-              >
-              <a
-                href="https://github.com/X200L/SITeducation"
-                rel="noreferrer"
-                target="_blank"
-                >GitHub <b>↗</b></a
-              >
-              <a href="https://t.me/SIT_team" rel="noreferrer" target="_blank"
-                >Telegram <b>↗</b></a
-              >
-              <a
-                href="https://youtube.com/@frogeesoft"
-                rel="noreferrer"
-                target="_blank"
-                >YouTube <b>↗</b></a
-              >
-            </div>
-          </div>
-        </article>
-        <div class="skills-grid">
-          <article class="skill-card reveal">
-            <span class="skill-index">A</span>
-            <h3>Embedded &amp; Robotics</h3>
-            <p>
-              C, C++, Arduino, ESP32, ROS, датчики, прототипирование устройств и
-              автономные системы.
-            </p>
-            <div class="tags">
-              <span>C++</span><span>ESP32</span><span>ROS 2</span
-              ><span>Arduino</span>
-            </div>
-          </article>
-          <article class="skill-card reveal reveal-delay-1">
-            <span class="skill-index">B</span>
-            <h3>AI &amp; Computer Vision</h3>
-            <p>
-              Python, OpenCV, YOLO, обработка изображений, детекция объектов и
-              интеграция AI в прикладные системы.
-            </p>
-            <div class="tags">
-              <span>Python</span><span>YOLO</span><span>OpenCV</span
-              ><span>FastAPI</span>
-            </div>
-          </article>
-          <article class="skill-card reveal reveal-delay-2">
-            <span class="skill-index">C</span>
-            <h3>Web &amp; Product</h3>
-            <p>
-              React, JavaScript, TypeScript, интерфейсы, адаптивная вёрстка и
-              desktop-приложения.
-            </p>
-            <div class="tags">
-              <span>React</span><span>TypeScript</span><span>JavaScript</span
-              ><span>Electron</span>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="section projects" id="projects">
         <div class="section-heading reveal">
-          <div class="section-label"><span>03</span> Избранные проекты</div>
-          <h2>От идеи — к <em>работающему прототипу.</em></h2>
-          <p>
-            Проекты из моего GitHub и резюме. Публичная статистика репозиториев
-            обновляется через GitHub API при открытии сайта.
-          </p>
+          <div class="section-label"><span>02</span> Избранные проекты</div>
+          <h2>Личные и <em>рабочие проекты и идеи:</em></h2>
         </div>
         <article class="project-featured reveal" data-repo="MarketLog">
           <a
@@ -389,7 +278,7 @@
                 ><b data-repo-forks="">⑂ 0</b></span
               >
             </div>
-            <h3>MarketLog / Яндекс Топология</h3>
+            <h3>Яндекс Топология</h3>
             <p>
               Сервис для проектирования роботизированных складов. Система
               получает план помещения, распознаёт доступные зоны, строит сетку и
@@ -773,123 +662,226 @@
           >
         </div>
       </section>
-      <section class="section achievements" id="achievements">
+
+      <section
+        class="section achievements timeline-section has-section-rail"
+        id="achievements"
+      >
+        <div class="section-rail" aria-hidden="true">
+          <span>Достижения</span><strong>03</strong>
+        </div>
         <div class="section-heading reveal">
-          <div class="section-label"><span>04</span> Достижения</div>
-          <h2>
-            Соревнования как способ<br /><em>проверять идеи на прочность.</em>
-          </h2>
+          <div class="section-label">
+            <span>03</span> Соревнования и достижения
+          </div>
+          <h2>Опыт участия в <em>соревнованиях</em></h2>
         </div>
-        <div class="achievement-list">
-          <article class="achievement reveal">
-            <span class="achievement-year">2026</span>
-            <div>
-              <small>Победитель</small>
-              <h3>Конкурс по робототехнике «Hello, Pioneer» от ГК «Геоскан»</h3>
+
+        <div class="year-timeline">
+          <section class="timeline-year reveal">
+            <div class="year-marker">
+              <strong>2026</strong><span>текущий год</span>
             </div>
-            <b>01</b>
-          </article>
-          <article class="achievement reveal">
-            <span class="achievement-year">2026</span>
-            <div>
-              <small>Победитель</small>
-              <h3>Всероссийский конкурс научных работ «Спутник»</h3>
+            <div class="year-events">
+              <article class="timeline-event timeline-event-primary">
+                <span>Победитель</span>
+                <h3>
+                  Конкурс по робототехнике «Hello, Pioneer» от ГК «Геоскан»
+                </h3>
+                <b>01</b>
+              </article>
+              <article class="timeline-event">
+                <span>Победитель</span>
+                <h3>Всероссийский конкурс научных работ «Спутник»</h3>
+                <b>02</b>
+              </article>
+              <article class="timeline-event">
+                <span>Призёр регионального этапа</span>
+                <h3>
+                  Всероссийская олимпиада школьников по технологии и информатике
+                </h3>
+                <b>03</b>
+              </article>
+              <article class="timeline-event">
+                <span>Участник</span>
+                <h3>
+                  Международный научный съезд школьников и Конгресс молодых
+                  учёных
+                </h3>
+                <b>04</b>
+              </article>
+              <article class="timeline-event">
+                <span>Финалист</span>
+                <h3>Национальная технологическая олимпиада</h3>
+                <b>05</b>
+              </article>
             </div>
-            <b>02</b>
-          </article>
-          <article class="achievement reveal">
-            <span class="achievement-year">2026</span>
-            <div>
-              <small>Призёр регионального этапа</small>
-              <h3>
-                Всероссийская олимпиада школьников по технологии и информатике
-              </h3>
+          </section>
+          <section class="timeline-year reveal">
+            <div class="year-marker">
+              <strong>2025</strong><span>архив</span>
             </div>
-            <b>03</b>
-          </article>
-          <article class="achievement reveal">
-            <span class="achievement-year">2026</span>
-            <div>
-              <small>Участник</small>
-              <h3>
-                Международный научный съезд школьников и Конгресс молодых учёных
-              </h3>
+            <div class="year-events">
+              <article class="timeline-event">
+                <span>Победитель</span>
+                <h3>
+                  Всероссийский конкурс научно-технических проектов «Большие
+                  вызовы»
+                </h3>
+                <b>06</b>
+              </article>
+              <article class="timeline-event">
+                <span>Призёр</span>
+                <h3>Кейс-чемпионат «Ключ» НИУ ВШЭ</h3>
+                <b>07</b>
+              </article>
+              <article class="timeline-event">
+                <span>Победитель</span>
+                <h3>Кейс-чемпионат «Капча»</h3>
+                <b>08</b>
+              </article>
             </div>
-            <b>04</b>
-          </article>
-          <article class="achievement reveal">
-            <span class="achievement-year">2026</span>
-            <div>
-              <small>Финалист</small>
-              <h3>Национальная технологическая олимпиада</h3>
-            </div>
-            <b>05</b>
-          </article>
-          <article class="achievement reveal">
-            <span class="achievement-year">2025</span>
-            <div>
-              <small>Победитель</small>
-              <h3>
-                Всероссийский конкурс научно-технических проектов «Большие
-                вызовы»
-              </h3>
-            </div>
-            <b>06</b>
-          </article>
-          <article class="achievement reveal">
-            <span class="achievement-year">2025</span>
-            <div>
-              <small>Призёр</small>
-              <h3>Кейс-чемпионат «Ключ» НИУ ВШЭ</h3>
-            </div>
-            <b>07</b>
-          </article>
-          <article class="achievement reveal">
-            <span class="achievement-year">2025</span>
-            <div>
-              <small>Победитель</small>
-              <h3>Кейс-чемпионат «Капча»</h3>
-            </div>
-            <b>08</b>
-          </article>
+          </section>
         </div>
       </section>
-      <section class="section principles">
-        <div class="section-label reveal"><span>05</span> Как я работаю</div>
-        <div class="principles-grid">
-          <div class="principle reveal">
+
+      <section class="section workflow-section has-section-rail" id="process">
+        <div class="section-rail" aria-hidden="true">
+          <span>Как я работаю</span><strong>04</strong>
+        </div>
+        <div class="workflow-head reveal">
+          <div class="section-label"><span>04</span> Как я работаю</div>
+          <h2>От постановки задачи<br />до <em>рабочего прототипа.</em></h2>
+        </div>
+        <div class="workflow-track">
+          <article class="workflow-step reveal">
             <span>01</span>
-            <h3>Сначала — рабочий прототип</h3>
-            <p>
-              Быстро собираю минимальную версию, проверяю ключевую гипотезу и
-              только потом усложняю систему.
-            </p>
-          </div>
-          <div class="principle reveal reveal-delay-1">
+            <div>
+              <small>Understand</small>
+              <h3>Анализ</h3>
+              <p>
+                Разбираюсь в задаче, ограничениях и реальном сценарии
+                использования.
+              </p>
+            </div>
+          </article>
+          <article class="workflow-step reveal reveal-delay-1">
             <span>02</span>
-            <h3>Думаю системой</h3>
-            <p>
-              Связываю железо, алгоритмы, API и интерфейс так, чтобы продукт
-              работал как единое целое.
-            </p>
-          </div>
-          <div class="principle reveal reveal-delay-2">
+            <div>
+              <small>Design</small>
+              <h3>Архитектура</h3>
+              <p>
+                Определяю компоненты, протоколы, алгоритмы и пользовательские
+                интерфейсы.
+              </p>
+            </div>
+          </article>
+          <article class="workflow-step reveal reveal-delay-2">
             <span>03</span>
-            <h3>Учусь через практику</h3>
-            <p>
-              Осваиваю новые технологии под реальную задачу и сразу использую их
-              в проекте.
-            </p>
-          </div>
+            <div>
+              <small>Build</small>
+              <h3>Прототип</h3>
+              <p>
+                Собираю минимальную рабочую версию и проверяю ключевые гипотезы.
+              </p>
+            </div>
+          </article>
+          <article class="workflow-step reveal">
+            <span>04</span>
+            <div>
+              <small>Improve</small>
+              <h3>Доработка</h3>
+              <p>
+                Тестирую систему в реальных условиях и довожу до стабильного
+                результата.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
-      <section class="section contact" id="contact">
+
+      <section
+        class="section personal-project-section has-section-rail"
+        id="about"
+      >
+        <div class="section-rail" aria-hidden="true">
+          <span>Личный проект</span><strong>05</strong>
+        </div>
+        <div class="section-label reveal"><span>05</span> Личный проект</div>
+        <article class="team-card reveal">
+          <div class="team-card-brand">
+            <span aria-hidden="true" class="brand-logo-switch"
+              ><img
+                alt=""
+                class="brand-logo-dark"
+                height="85"
+                src="assets/frogeesoft-logo.png"
+                width="309" /><img
+                alt=""
+                class="brand-logo-light"
+                height="85"
+                src="assets/frogeesoft-logo-light.png"
+                width="309"
+            /></span>
+            <span>Мой личный технологический проект</span>
+          </div>
+          <div class="team-card-copy">
+            <h3>FrogeeSoft / S.I.T</h3>
+            <p>
+              FrogeeSoft / S.I.T —
+              <strong>мой личный технологический проект</strong>. В его рамках я
+              создаю инструменты для разработчиков, проектирую электронные
+              устройства, собираю робототехнические системы и проверяю идеи на
+              инженерных соревнованиях и хакатонах.
+            </p>
+            <p>
+              Также я развиваю образовательную платформу
+              <strong>sit-edu.ru</strong>, веду канал проекта и публикую
+              материалы о разработке, робототехнике, электронике и собственных
+              экспериментах.
+            </p>
+            <div class="team-directions">
+              <span>Developer tools</span><span>Devices</span
+              ><span>Robotics</span><span>Competitions</span
+              ><span>Education</span>
+            </div>
+            <div class="team-links">
+              <a href="https://sit-edu.ru" rel="noreferrer" target="_blank"
+                >Платформа <b>↗</b></a
+              >
+              <a
+                href="https://github.com/X200L/SITeducation"
+                rel="noreferrer"
+                target="_blank"
+                >GitHub <b>↗</b></a
+              >
+              <a href="https://t.me/SIT_team" rel="noreferrer" target="_blank"
+                >Telegram <b>↗</b></a
+              >
+              <a
+                href="https://youtube.com/@frogeesoft"
+                rel="noreferrer"
+                target="_blank"
+                >YouTube <b>↗</b></a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="section contact contact-redesign has-section-rail"
+        id="contact"
+      >
+        <div class="section-rail" aria-hidden="true">
+          <span>Контакты</span><strong>06</strong>
+        </div>
         <div class="contact-card reveal">
           <div class="contact-copy">
             <div class="section-label"><span>06</span> Контакты</div>
             <h2>Есть интересная задача?<br /><em>Давайте обсудим.</em></h2>
             <p>
-              Готов к стажировке, первой работе, хакатонам и совместной
+              Открыт к стажировке, первой работе, соревнованиям и совместной
               разработке технологических продуктов.
             </p>
           </div>
@@ -920,7 +912,7 @@
               ><span>Telegram</span><strong>@SIT_team</strong><b>↗</b></a
             >
           </div>
-          <button class="print-button" data-print="" type="button">
+          <button class="print-button" data-print type="button">
             <span>Сохранить как PDF</span><b>↓</b>
           </button>
         </div>

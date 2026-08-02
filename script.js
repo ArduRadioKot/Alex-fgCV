@@ -49,17 +49,6 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -35px' });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  const glow = document.querySelector('.cursor-glow');
-  if (glow && matchMedia('(pointer:fine)').matches) {
-    let x = innerWidth / 2, y = innerHeight / 2, tx = x, ty = y;
-    window.addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; }, { passive: true });
-    const animate = () => {
-      x += (tx - x) * .08; y += (ty - y) * .08;
-      glow.style.transform = `translate(${x - 215}px, ${y - 215}px)`;
-      requestAnimationFrame(animate);
-    };
-    animate();
-  }
   const fallbackRepos = {
     Geoscan_MOPS: [5, 1], FrogeeCore: [13, 1], LogicCircuitSimulator: [7, 1],
     FgSNotes: [7, 0], 'ecoCheck-library': [5, 0], 'yasno-service': [0, 0],
