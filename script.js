@@ -97,4 +97,30 @@
   document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
   const year = document.querySelector('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
+
+  const track = document.querySelector('.marquee-track');
+  const sourceGroup = track?.querySelector('.marquee-group');
+  const syncMarquee = () => {
+    if (!track || !sourceGroup) return;
+    const groupWidth = sourceGroup.offsetWidth;
+    const viewport = track.parentElement?.clientWidth || window.innerWidth;
+    if (!groupWidth) return;
+
+    const needed = Math.max(2, Math.ceil(viewport / groupWidth) + 1);
+    const groups = [...track.querySelectorAll('.marquee-group')];
+    if (groups.length < needed) {
+      for (let i = groups.length; i < needed; i += 1) {
+        const clone = sourceGroup.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
+      }
+    } else if (groups.length > needed) {
+      groups.slice(needed).forEach(group => group.remove());
+    }
+
+    track.style.setProperty('--marquee-distance', `${groupWidth}px`);
+    track.style.setProperty('--marquee-duration', `${Math.max(groupWidth / 36, 12)}s`);
+  };
+  syncMarquee();
+  window.addEventListener('resize', syncMarquee, { passive: true });
 })();

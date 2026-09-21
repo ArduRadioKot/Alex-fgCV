@@ -547,22 +547,34 @@ img {
   width: max-content;
   display: flex;
   align-items: center;
-  gap: 35px;
-  padding: 17px 0;
-  animation: marquee 26s linear infinite;
+  gap: 0;
+  padding: 0;
   color: var(--muted);
   font-weight: 780;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.85rem;
+  will-change: transform;
+  animation: marquee-continuous var(--marquee-duration, 26s) linear infinite;
 }
 .marquee-track i {
   color: var(--accent);
   font-style: normal;
 }
-@keyframes marquee {
+.marquee-group {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 17px 0;
+  padding-inline-end: 35px;
+}
+@keyframes marquee-continuous {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(calc(-1 * var(--marquee-distance, 50%)), 0, 0);
   }
 }
 
@@ -934,15 +946,6 @@ img {
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  transition:
-    transform 0.3s,
-    border-color 0.3s,
-    background 0.3s;
-}
-.project-card:hover {
-  transform: translateY(-6px);
-  border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
-  background: var(--surface-2);
 }
 .project-number {
   color: var(--accent);
@@ -2620,9 +2623,10 @@ footer a:last-child {
     line-height: 1.2;
   }
 
-  .marquee-track {
+  .marquee-group {
     gap: 25px;
     padding-block: 14px;
+    padding-inline-end: 25px;
   }
   .section-heading h2 {
     margin-top: 26px;
@@ -4479,47 +4483,14 @@ footer a:last-child {
   background: var(--bg-soft);
 }
 
-.marquee-track {
-  display: flex;
-  width: max-content;
-  gap: 0;
-  padding: 0;
-  will-change: transform;
-  animation: marquee-continuous 26s linear infinite;
-  animation-play-state: running !important;
-}
-.marquee-group {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  padding: 17px 17.5px;
-}
-@keyframes marquee-continuous {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
 .marquee:hover .marquee-track,
 .marquee:focus-within .marquee-track {
   animation-play-state: running !important;
 }
 
-@media (max-width: 620px) {
-  .marquee-group {
-    gap: 25px;
-    padding: 14px 12.5px;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
-    animation-name: marquee-continuous !important;
-    animation-duration: 26s !important;
-    animation-timing-function: linear !important;
+    animation-duration: var(--marquee-duration, 26s) !important;
     animation-iteration-count: infinite !important;
   }
 }
