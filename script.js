@@ -32,6 +32,11 @@
     document.body.classList.toggle('menu-open', !isOpen);
   });
   mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  document.addEventListener('click', event => {
+    if (!mobileMenu?.classList.contains('is-open')) return;
+    if (mobileMenu.contains(event.target) || menuToggle?.contains(event.target)) return;
+    closeMenu();
+  });
 
   // Mark the section in view in both navigations.
   const navLinks = [...document.querySelectorAll('[data-nav-link]')];
