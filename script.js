@@ -32,6 +32,24 @@
     document.body.classList.toggle('menu-open', !isOpen);
   });
   mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+  // Mark the section in view in both navigations.
+  const navLinks = [...document.querySelectorAll('[data-nav-link]')];
+  const navSections = [...new Set(navLinks.map(link => link.getAttribute('href')))]
+    .map(hash => document.querySelector(hash))
+    .filter(Boolean);
+  const setCurrent = id => navLinks.forEach(link => {
+    if (link.getAttribute('href') === `#${id}`) link.setAttribute('aria-current', 'true');
+    else link.removeAttribute('aria-current');
+  });
+  if ('IntersectionObserver' in window) {
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) setCurrent(entry.target.id);
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    navSections.forEach(section => sectionObserver.observe(section));
+  }
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') closeMenu();
   });
@@ -55,14 +73,24 @@
     FgSdrones: [4, 3], MarketLog: [3, 0], 'Warehouse-delivery-robot': [2, 0]
   };
 
+  const STAR_FORMS = ['звезда', 'звезды', 'звёзд'];
+  const FORK_FORMS = ['форк', 'форка', 'форков'];
+  const countLabel = (n, [one, few, many]) => {
+    const mod10 = n % 10;
+    const mod100 = n % 100;
+    if (mod10 === 1 && mod100 !== 11) return `${n} ${one}`;
+    if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return `${n} ${few}`;
+    return `${n} ${many}`;
+  };
+
   const updateRepoCards = repos => {
     repos.forEach(repo => {
       const card = document.querySelector(`[data-repo="${CSS.escape(repo.name)}"]`);
       if (!card) return;
       const starEl = card.querySelector('[data-repo-stars]');
       const forkEl = card.querySelector('[data-repo-forks]');
-      if (starEl) starEl.textContent = `★ ${repo.stargazers_count}`;
-      if (forkEl) forkEl.textContent = `⑂ ${repo.forks_count}`;
+      if (starEl) starEl.textContent = countLabel(repo.stargazers_count, STAR_FORMS);
+      if (forkEl) forkEl.textContent = countLabel(repo.forks_count, FORK_FORMS);
     });
   };
 
@@ -72,8 +100,8 @@
       if (!card) return;
       const starEl = card.querySelector('[data-repo-stars]');
       const forkEl = card.querySelector('[data-repo-forks]');
-      if (starEl) starEl.textContent = `★ ${stars}`;
-      if (forkEl) forkEl.textContent = `⑂ ${forks}`;
+      if (starEl) starEl.textContent = countLabel(stars, STAR_FORMS);
+      if (forkEl) forkEl.textContent = countLabel(forks, FORK_FORMS);
     });
   };
 
@@ -118,9 +146,19 @@
       groups.slice(needed).forEach(group => group.remove());
     }
 
-    track.style.setProperty('--marquee-distance', `${groupWidth}px`);
+    // Unchanged width: leave the running animation alone.
+    const distance = `${groupWidth}px`;
+    if (track.style.getPropertyValue('--marquee-distance') === distance) return;
+    track.style.setProperty('--marquee-distance', distance);
     track.style.setProperty('--marquee-duration', `${Math.max(groupWidth / 36, 12)}s`);
   };
   syncMarquee();
+  // Re-measure once the web font is in and whenever the group itself changes width,
+  // otherwise the loop distance no longer matches one copy and the seam jumps.
+  document.fonts?.ready.then(syncMarquee);
+  if (sourceGroup && 'ResizeObserver' in window) {
+    new ResizeObserver(syncMarquee).observe(sourceGroup);
+  }
+  // A wider window needs more copies even when one copy keeps its width.
   window.addEventListener('resize', syncMarquee, { passive: true });
 })();

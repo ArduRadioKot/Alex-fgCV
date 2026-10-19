@@ -47,13 +47,14 @@
         </span>
       </a>
       <nav aria-label="Основная навигация" class="desktop-nav">
-        <a href="#info">Основная информация</a>
-        <a href="#projects">Проекты</a>
-        <a href="#achievements">Достижения</a>
-        <a href="#about">Личный проект</a>
-        <a href="#contact">Контакты</a>
+        <a data-nav-link href="#info">Обо мне</a>
+        <a data-nav-link href="#projects">Проекты</a>
+        <a data-nav-link href="#achievements">Достижения</a>
+        <a data-nav-link href="#process">Как я работаю</a>
+        <a data-nav-link href="#about">Личный проект</a>
       </nav>
       <div class="header-actions">
+        <a class="button button-primary header-cta" href="#contact">Связаться</a>
         <button
           aria-label="Переключить тему"
           class="theme-toggle"
@@ -82,23 +83,27 @@
       </div>
     </header>
     <div aria-hidden="true" class="mobile-menu" data-mobile-menu="">
-      <a href="#info">Основная информация</a>
-      <a href="#projects">Проекты</a>
-      <a href="#achievements">Достижения</a>
-      <a href="#about">Личный проект</a>
-      <a href="#contact">Контакты</a>
+      <nav aria-label="Меню">
+      <a data-nav-link href="#info"><span aria-hidden="true">01</span>Обо мне</a>
+      <a data-nav-link href="#projects"><span aria-hidden="true">02</span>Проекты</a>
+      <a data-nav-link href="#achievements"><span aria-hidden="true">03</span>Достижения</a>
+      <a data-nav-link href="#process"><span aria-hidden="true">04</span>Как я работаю</a>
+      <a data-nav-link href="#about"><span aria-hidden="true">05</span>Личный проект</a>
+      <a data-nav-link href="#contact"><span aria-hidden="true">06</span>Контакты</a>
+      </nav>
+      <a class="button button-primary mobile-menu-cta" href="mailto:frogeesoft.team@gmail.com"
+        >Написать на почту <span aria-hidden="true">↗</span></a
+      >
     </div>
     <main id="main">
       <section class="hero section" id="top">
         <div class="hero-copy reveal">
-          <h1>
-            Привет, я <span>Александр.</span><br />
-            FullStack/ Embedded-разработчик.
-          </h1>
+          <h1>Привет, я <span>Александр.</span> </h1>
           <p class="hero-lead">
-            Инженер-разработчик и студент Научно-технологического университета
-            «Сириус». Работаю с робототехникой, embedded-системами, компьютерным
-            зрением и fullstack-продуктами.
+            <strong>FullStack и embedded-разработчик,</strong> студент
+            Научно-технологического университета «Сириус». Работаю
+            с робототехникой, embedded-системами, компьютерным зрением
+            и fullstack-продуктами.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projects"
@@ -152,24 +157,16 @@
       <section aria-label="Ключевые направления" class="marquee">
         <div class="marquee-track">
           <div class="marquee-group">
-            <span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i
-            ><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i
-            ><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
+            <span>Embedded Systems</span><span>Robotics</span><span>Computer Vision</span><span>IoT</span><span>Frontend</span><span>AI</span>
           </div>
           <div aria-hidden="true" class="marquee-group">
-            <span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i
-            ><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i
-            ><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
+            <span>Embedded Systems</span><span>Robotics</span><span>Computer Vision</span><span>IoT</span><span>Frontend</span><span>AI</span>
           </div>
           <div aria-hidden="true" class="marquee-group">
-            <span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i
-            ><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i
-            ><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
+            <span>Embedded Systems</span><span>Robotics</span><span>Computer Vision</span><span>IoT</span><span>Frontend</span><span>AI</span>
           </div>
           <div aria-hidden="true" class="marquee-group">
-            <span>Embedded Systems</span><i>✦</i><span>Robotics</span><i>✦</i
-            ><span>Computer Vision</span><i>✦</i><span>IoT</span><i>✦</i
-            ><span>Frontend</span><i>✦</i><span>AI</span><i>✦</i>
+            <span>Embedded Systems</span><span>Robotics</span><span>Computer Vision</span><span>IoT</span><span>Frontend</span><span>AI</span>
           </div>
         </div>
       </section>
@@ -179,13 +176,12 @@
           <span>Обо мне</span><strong>01</strong>
         </div>
         <div class="section-heading reveal about-compact-heading">
-          <div class="section-label"><span>01</span> Коротко обо мне</div>
-          <h2>Немного обо мне, <em>образовании и опыте.</em></h2>
+          <h2>Учёба, стек и опыт</h2>
         </div>
 
         <div class="about-compact-grid">
           <article class="about-card reveal">
-            <span class="about-card-kicker">Образование</span>
+            <h3 class="about-card-title">Образование</h3>
             <h3>Научно-технологический университет «Сириус»</h3>
             <p>
               Студент 1 курса. Направления подготовки: 01.00.00 Математика и
@@ -197,21 +193,21 @@
           </article>
 
           <article class="about-card reveal reveal-delay-1">
-            <span class="about-card-kicker">Основной стек</span>
+            <h3 class="about-card-title">Основной стек</h3>
             <div class="stack-list">
               <div class="stack-item">
-                <span>Languages</span
+                <span>Языки</span
                 ><strong>C/C++ · Python · JavaScript · TypeScript</strong>
               </div>
               <div class="stack-item">
-                <span>Robotics / Embedded</span
+                <span>Робототехника и embedded</span
                 ><strong
                   >ROS / ROS 2 · ESP32 · STM32 · NRF52xx · MAVLink · SLAM ·
                   Nav2</strong
                 >
               </div>
               <div class="stack-item">
-                <span>AI / Backend / Web</span
+                <span>AI, backend и web</span
                 ><strong
                   >OpenCV · YOLO · NumPy · FastAPI · PyTorch· React · Electron
                 </strong>
@@ -220,7 +216,7 @@
           </article>
 
           <article class="about-card about-card-wide reveal">
-            <span class="about-card-kicker">Опыт стажировок</span>
+            <h3 class="about-card-title">Опыт стажировок</h3>
             <div class="experience-list">
               <div class="experience-item">
                 <div class="experience-meta">Яндекс</div>
@@ -235,14 +231,11 @@
                 <div class="experience-tags">Python · CV · Algorithms</div>
               </div>
               <div class="experience-item">
-                <div class="experience-meta">ГК «Геоскан»</div>
+                <div class="experience-meta">ГК&nbsp;«Геоскан»</div>
                 <div class="experience-copy">
-                  <h3>
-                    Сервис мониторинга и обследования зданий на предмет
-                    повреждений
-                  </h3>
+                  <h3>Мониторинг и обследование зданий</h3>
                   <p>
-                    Проекты мониторинга и автоматизации: обработка
+                    Сервис поиска повреждений и проекты автоматизации: обработка
                     аэрофотосъёмки, детекция дефектов, разработка систем
                     управления и прототипирование инженерных решений.
                   </p>
@@ -261,8 +254,7 @@
           <span>Избранные проекты</span><strong>02</strong>
         </div>
         <div class="section-heading reveal">
-          <div class="section-label"><span>02</span> Избранные проекты</div>
-          <h2>Личные и <em>рабочие проекты и идеи:</em></h2>
+          <h2>Личные и рабочие проекты</h2>
         </div>
         <article class="project-featured reveal" data-repo="MarketLog">
           <a
@@ -281,14 +273,13 @@
             <span class="project-image-badge">Яндекс · Большие вызовы</span>
           </a>
           <div class="project-info">
+            <h3>Яндекс Топология</h3>
             <div class="project-kicker">
-              <span>Featured / Yandex</span>
               <span class="repo-stats"
-                ><b data-repo-stars="">★ 3</b
-                ><b data-repo-forks="">⑂ 0</b></span
+                ><b data-repo-stars="">3 звезды</b
+                ><b data-repo-forks="">0 форков</b></span
               >
             </div>
-            <h3>Яндекс Топология</h3>
             <p>
               Сервис для проектирования роботизированных складов. Система
               получает план помещения, распознаёт доступные зоны, строит сетку и
@@ -328,10 +319,9 @@
             data-repo="Geoscan_MOPS"
           >
             <div class="project-card-top">
-              <span class="project-number">01</span
-              ><span class="repo-stats"
-                ><b data-repo-stars="">★ 5</b
-                ><b data-repo-forks="">⑂ 1</b></span
+              <span class="repo-stats"
+                ><b data-repo-stars="">5 звёзд</b
+                ><b data-repo-forks="">1 форк</b></span
               >
             </div>
             <a
@@ -351,7 +341,7 @@
             </a>
             <h3>МОПС — мониторинг сооружений</h3>
             <p>
-              Система, созданная при поддержке ГК «Геоскан»: дрон собирает
+              Система, созданная при поддержке ГК&nbsp;«Геоскан»: дрон собирает
               фотографии объекта, Metashape строит ортофотофасад, а YOLO находит
               трещины. Backend — FastAPI, интерфейс — React.
             </p>
@@ -368,10 +358,9 @@
           </article>
           <article class="project-card reveal" data-repo="yasno-service">
             <div class="project-card-top">
-              <span class="project-number">02</span
-              ><span class="repo-stats"
-                ><b data-repo-stars="">★ 0</b
-                ><b data-repo-forks="">⑂ 0</b></span
+              <span class="repo-stats"
+                ><b data-repo-stars="">0 звёзд</b
+                ><b data-repo-forks="">0 форков</b></span
               >
             </div>
             <a
@@ -409,10 +398,9 @@
             data-repo="Warehouse-delivery-robot"
           >
             <div class="project-card-top">
-              <span class="project-number">03</span
-              ><span class="repo-stats"
-                ><b data-repo-stars="">★ 2</b
-                ><b data-repo-forks="">⑂ 0</b></span
+              <span class="repo-stats"
+                ><b data-repo-stars="">2 звезды</b
+                ><b data-repo-forks="">0 форков</b></span
               >
             </div>
             <a
@@ -460,10 +448,9 @@
             data-repo="LogicCircuitSimulator"
           >
             <div class="project-card-top">
-              <span class="project-number">04</span
-              ><span class="repo-stats"
-                ><b data-repo-stars="">★ 7</b
-                ><b data-repo-forks="">⑂ 1</b></span
+              <span class="repo-stats"
+                ><b data-repo-stars="">7 звёзд</b
+                ><b data-repo-forks="">1 форк</b></span
               >
             </div>
             <a
@@ -498,10 +485,9 @@
           </article>
           <article class="project-card reveal" data-repo="FgSNotes">
             <div class="project-card-top">
-              <span class="project-number">05</span
-              ><span class="repo-stats"
-                ><b data-repo-stars="">★ 7</b
-                ><b data-repo-forks="">⑂ 0</b></span
+              <span class="repo-stats"
+                ><b data-repo-stars="">7 звёзд</b
+                ><b data-repo-forks="">0 форков</b></span
               >
             </div>
             <a
@@ -536,10 +522,9 @@
           </article>
           <article class="project-card reveal" data-repo="FrogeeCore">
             <div class="project-card-top">
-              <span class="project-number">06</span
-              ><span class="repo-stats"
-                ><b data-repo-stars="">★ 13</b
-                ><b data-repo-forks="">⑂ 1</b></span
+              <span class="repo-stats"
+                ><b data-repo-stars="">13 звёзд</b
+                ><b data-repo-forks="">1 форк</b></span
               >
             </div>
             <a
@@ -598,9 +583,6 @@
           <span>Достижения</span><strong>03</strong>
         </div>
         <div class="section-heading reveal">
-          <div class="section-label">
-            <span>03</span> Соревнования и достижения
-          </div>
           <h2>Опыт участия в <em>соревнованиях</em></h2>
         </div>
 
@@ -613,21 +595,18 @@
               <article class="timeline-event timeline-event-primary">
                 <span>Победитель</span>
                 <h3>
-                  Конкурс по робототехнике «Hello, Pioneer» от ГК «Геоскан»
+                  Конкурс по робототехнике «Hello, Pioneer» от ГК&nbsp;«Геоскан»
                 </h3>
-                <b>01</b>
               </article>
               <article class="timeline-event">
                 <span>Победитель</span>
                 <h3>Всероссийский конкурс научных работ «Спутник»</h3>
-                <b>02</b>
               </article>
               <article class="timeline-event">
                 <span>Призёр регионального этапа</span>
                 <h3>
                   Всероссийская олимпиада школьников по технологии и информатике
                 </h3>
-                <b>03</b>
               </article>
               <article class="timeline-event">
                 <span>Участник</span>
@@ -635,12 +614,10 @@
                   Международный научный съезд школьников и Конгресс молодых
                   учёных
                 </h3>
-                <b>04</b>
               </article>
               <article class="timeline-event">
                 <span>Финалист</span>
                 <h3>Национальная технологическая олимпиада</h3>
-                <b>05</b>
               </article>
             </div>
           </section>
@@ -655,17 +632,14 @@
                   Всероссийский конкурс научно-технических проектов «Большие
                   вызовы»
                 </h3>
-                <b>06</b>
               </article>
               <article class="timeline-event">
                 <span>Призёр</span>
                 <h3>Кейс-чемпионат «Ключ» НИУ ВШЭ</h3>
-                <b>07</b>
               </article>
               <article class="timeline-event">
                 <span>Победитель</span>
                 <h3>Кейс-чемпионат «Капча»</h3>
-                <b>08</b>
               </article>
             </div>
           </section>
@@ -677,14 +651,12 @@
           <span>Как я работаю</span><strong>04</strong>
         </div>
         <div class="workflow-head reveal">
-          <div class="section-label"><span>04</span> Как я работаю</div>
-          <h2>От постановки задачи<br />до <em>рабочего прототипа.</em></h2>
+          <h2>От задачи до прототипа.</h2>
         </div>
         <div class="workflow-track">
           <article class="workflow-step reveal">
-            <span>01</span>
+            <span class="workflow-index">01</span>
             <div>
-              <small>Understand</small>
               <h3>Анализ</h3>
               <p>
                 Разбираюсь в задаче, ограничениях и реальном сценарии
@@ -693,9 +665,8 @@
             </div>
           </article>
           <article class="workflow-step reveal reveal-delay-1">
-            <span>02</span>
+            <span class="workflow-index">02</span>
             <div>
-              <small>Design</small>
               <h3>Архитектура</h3>
               <p>
                 Определяю компоненты, протоколы, алгоритмы и пользовательские
@@ -704,9 +675,8 @@
             </div>
           </article>
           <article class="workflow-step reveal reveal-delay-2">
-            <span>03</span>
+            <span class="workflow-index">03</span>
             <div>
-              <small>Build</small>
               <h3>Прототип</h3>
               <p>
                 Собираю минимальную рабочую версию и проверяю ключевые гипотезы.
@@ -714,9 +684,8 @@
             </div>
           </article>
           <article class="workflow-step reveal">
-            <span>04</span>
+            <span class="workflow-index">04</span>
             <div>
-              <small>Improve</small>
               <h3>Доработка</h3>
               <p>
                 Тестирую систему в реальных условиях и довожу до стабильного
@@ -734,7 +703,6 @@
         <div class="section-rail" aria-hidden="true">
           <span>Личный проект</span><strong>05</strong>
         </div>
-        <div class="section-label reveal"><span>05</span> Личный проект</div>
         <article class="team-card reveal">
           <div class="team-card-brand">
             <span aria-hidden="true" class="brand-logo-switch"
@@ -805,43 +773,46 @@
         </div>
         <div class="contact-card reveal">
           <div class="contact-copy">
-            <div class="section-label"><span>06</span> Контакты</div>
-            <h2>Есть интересная задача?<br /><em>Давайте обсудим.</em></h2>
+            <h2>Давайте <em>обсудим.</em></h2>
             <p>
-              Открыт к стажировке, первой работе, соревнованиям и совместной
-              разработке технологических продуктов.
+              Есть интересная задача? Открыт к стажировке, первой работе,
+              соревнованиям и совместной разработке технологических продуктов.
             </p>
+            <button class="button button-secondary print-button" data-print type="button">
+              Сохранить как PDF <span aria-hidden="true">↓</span>
+            </button>
           </div>
           <div class="contact-actions">
-            <a class="contact-link" href="mailto:frogeesoft.team@gmail.com"
-              ><span>Email</span><strong>frogeesoft.team@gmail.com</strong
-              ><b>↗</b></a
-            >
-            <a
-              class="contact-link"
-              href="https://github.com/ArduRadioKot"
-              rel="noreferrer"
-              target="_blank"
-              ><span>GitHub</span><strong>@ArduRadioKot</strong><b>↗</b></a
-            >
-            <a
-              class="contact-link"
-              href="https://sit-edu.ru"
-              rel="noreferrer"
-              target="_blank"
-              ><span>Website</span><strong>sit-edu.ru</strong><b>↗</b></a
+            <a class="contact-link contact-link-primary" href="mailto:frogeesoft.team@gmail.com"
+              ><span>Почта</span
+              ><strong>frogeesoft.team@gmail.com</strong
+              ><b aria-hidden="true">↗</b></a
             >
             <a
               class="contact-link"
               href="https://t.me/SIT_team"
               rel="noreferrer"
               target="_blank"
-              ><span>Telegram</span><strong>@SIT_team</strong><b>↗</b></a
+              ><span>Telegram</span><strong>@SIT_team</strong
+              ><b aria-hidden="true">↗</b></a
+            >
+            <a
+              class="contact-link"
+              href="https://github.com/ArduRadioKot"
+              rel="noreferrer"
+              target="_blank"
+              ><span>GitHub</span><strong>@ArduRadioKot</strong
+              ><b aria-hidden="true">↗</b></a
+            >
+            <a
+              class="contact-link"
+              href="https://sit-edu.ru"
+              rel="noreferrer"
+              target="_blank"
+              ><span>Сайт</span><strong>sit-edu.ru</strong
+              ><b aria-hidden="true">↗</b></a
             >
           </div>
-          <button class="print-button" data-print type="button">
-            <span>Сохранить как PDF</span><b>↓</b>
-          </button>
         </div>
       </section>
     </main>
