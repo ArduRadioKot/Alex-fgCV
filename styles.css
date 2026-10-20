@@ -954,6 +954,14 @@ footer {
 footer .brand {
   color: var(--text);
 }
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+}
+.footer-brand p {
+  margin: 0;
+}
 footer a:last-child {
   color: var(--text);
   font-weight: var(--fw-heavy);
@@ -1253,13 +1261,6 @@ footer a:last-child {
   .all-projects {
     align-items: stretch;
     flex-direction: column;
-  }
-  footer {
-    flex-wrap: wrap;
-  }
-  footer p {
-    order: 3;
-    width: 100%;
   }
 }
 
@@ -1679,9 +1680,6 @@ footer a:last-child {
     flex: 0 0 auto;
   }
 
-  footer {
-    align-items: flex-start;
-  }
 }
 
 @media (max-width: 390px) {
