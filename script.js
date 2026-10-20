@@ -34,7 +34,7 @@
   mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
   document.addEventListener('click', event => {
     if (!mobileMenu?.classList.contains('is-open')) return;
-    if (mobileMenu.contains(event.target) || menuToggle?.contains(event.target)) return;
+    if (mobileMenu.contains(event.target) || header?.contains(event.target)) return;
     closeMenu();
   });
 
