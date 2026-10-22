@@ -11,7 +11,7 @@
   --accent-soft: #62c7d4;
   --on-accent: #061316;
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
-  --header-h: 82px;
+  --header-h: 96px;
   --container: min(1240px, calc(100vw - 48px));
 
   /* Type — five working sizes plus display steps; mobile values are set in the 620px query */
@@ -157,8 +157,9 @@ img {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
 }
 
-/* Header: wordmark, section links, one action. Transparent at the top; a full-width backing
-   fades in on scroll and the bar gets shorter. */
+/* Header (PillHeader from the FrogeeSoft kit, as on FG-Track): logo on the left; on the right a
+   navigation pill and round buttons. No action button. 96px at the top, 80px after scroll;
+   below 1100px the pill hides and the menu opens as a full-screen sheet. */
 .site-header {
   position: fixed;
   z-index: 80;
@@ -171,31 +172,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-32);
+  gap: var(--space-24);
   transition: height 0.3s;
 }
 .site-header.is-scrolled {
-  height: calc(var(--header-h) - 18px);
-}
-.site-header::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  top: -100px;
-  bottom: 0;
-  width: 100vw;
-  transform: translateX(-50%);
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
-  border-bottom: var(--rule);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
-.site-header.is-scrolled::before {
-  opacity: 1;
+  height: 80px;
 }
 .site-header .brand-logo-switch {
   transition: width 0.3s;
@@ -203,59 +184,69 @@ img {
 .site-header.is-scrolled .brand-logo-switch {
   width: 150px;
 }
-
-.desktop-nav {
-  display: flex;
-  gap: var(--space-24);
+/* Content scrolls under the header, so after scroll the logo sits on the same pill as the nav. */
+.site-header .brand {
+  /* The pill's inner padding is pulled back so the logo keeps the content edge. */
+  margin-left: -8px;
+  padding: 6px 14px 6px 8px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  transition:
+    background 0.3s,
+    border-color 0.3s;
 }
-.desktop-nav a {
-  position: relative;
-  padding-block: var(--space-8);
-  color: var(--muted);
-  font-size: var(--fs-small);
-  font-weight: var(--fw-bold);
-  white-space: nowrap;
-  transition: color 0.2s;
-}
-.desktop-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  height: 2px;
-  border-radius: 2px;
-  background: var(--accent);
-  transition: right 0.25s;
-}
-.desktop-nav a:hover,
-.desktop-nav a[aria-current="true"] {
-  color: var(--text);
-}
-.desktop-nav a:hover::after,
-.desktop-nav a[aria-current="true"]::after {
-  right: 0;
+.site-header.is-scrolled .brand {
+  border-color: var(--line);
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
 }
 
 .header-actions {
   display: flex;
   align-items: center;
-  gap: var(--space-8);
+  gap: 10px;
 }
-.site-header .header-cta {
-  min-height: 42px;
-  padding-inline: var(--space-20);
-  font-size: var(--fs-small);
+.header-pill {
+  display: flex;
+  gap: 2px;
+  padding: 6px;
+  border: var(--rule);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
 }
+.header-pill a {
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition:
+    color 0.2s,
+    background 0.2s;
+}
+.header-pill a:hover,
+.header-pill a[aria-current="true"] {
+  color: var(--text);
+  background: color-mix(in srgb, var(--text) 9%, transparent);
+}
+
 .theme-toggle,
 .menu-toggle {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
+  flex: none;
   display: grid;
   place-items: center;
-  border: 0;
+  border: var(--rule);
   border-radius: 50%;
-  background: var(--surface-2);
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  color: var(--text);
   cursor: pointer;
   transition:
     transform 0.2s,
@@ -264,7 +255,7 @@ img {
 .theme-toggle:hover,
 .menu-toggle:hover {
   transform: translateY(-2px);
-  background: color-mix(in srgb, var(--accent) 14%, var(--surface-2));
+  background: color-mix(in srgb, var(--text) 9%, var(--bg));
 }
 .menu-toggle {
   display: none;
@@ -272,7 +263,7 @@ img {
 }
 .menu-toggle span {
   position: absolute;
-  width: 17px;
+  width: 18px;
   height: 1.5px;
   background: currentColor;
   transition:
@@ -299,14 +290,8 @@ img {
   display: none;
 }
 
-@media (max-width: 1120px) {
-  .desktop-nav {
-    gap: var(--space-16);
-  }
-}
-@media (max-width: 980px) {
-  .desktop-nav,
-  .site-header .header-cta {
+@media (max-width: 1100px) {
+  .header-pill {
     display: none;
   }
   .menu-toggle {
@@ -318,9 +303,9 @@ img {
     z-index: 70;
     inset: 0;
     padding: calc(var(--header-h) + var(--space-24) + env(safe-area-inset-top))
-      max(var(--space-16), calc((100vw - 860px) / 2), env(safe-area-inset-right))
+      max(var(--space-16), calc((100vw - var(--container)) / 2), env(safe-area-inset-right))
       calc(var(--space-32) + env(safe-area-inset-bottom))
-      max(var(--space-16), calc((100vw - 860px) / 2), env(safe-area-inset-left));
+      max(var(--space-16), calc((100vw - var(--container)) / 2), env(safe-area-inset-left));
     display: flex;
     flex-direction: column;
     gap: var(--space-32);
@@ -347,9 +332,10 @@ img {
     padding: var(--space-16) 0;
     border-bottom: var(--rule);
     font-size: var(--fs-h3);
-    font-weight: var(--fw-black);
+    font-weight: var(--fw-heavy);
     line-height: var(--lh-heading);
-    letter-spacing: var(--ls-heading);
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
     transition: color 0.2s;
   }
   .mobile-menu nav a:hover,
@@ -361,18 +347,25 @@ img {
   }
 }
 @media (max-width: 620px) {
+  .site-header {
+    gap: var(--space-12);
+  }
+  .site-header.is-scrolled {
+    height: var(--header-h);
+  }
   .site-header.is-scrolled .brand-logo-switch {
     width: min(124px, 38vw);
   }
+  .header-actions {
+    gap: 6px;
+  }
   .theme-toggle,
   .menu-toggle {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
   }
 }
 
-/* The bar itself stays transparent so logo and links keep the content edges;
-   once the page scrolls, a full-width backing fades in so sections never show through it. */
 .brand {
   display: inline-flex;
   align-items: center;
@@ -1592,7 +1585,7 @@ footer a:last-child {
 @media (max-width: 620px) {
   :root {
     --container: calc(100% - 32px);
-    --header-h: 66px;
+    --header-h: 76px;
     --fs-display: clamp(2.6rem, 13vw, 4.2rem);
     --fs-h2: clamp(2.2rem, 10vw, 3.25rem);
     --fs-h3: clamp(1.5rem, 7vw, 2.1rem);
