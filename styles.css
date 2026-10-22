@@ -179,27 +179,7 @@ img {
   height: 80px;
 }
 .site-header .brand-logo-switch {
-  transition: width 0.3s;
-}
-.site-header.is-scrolled .brand-logo-switch {
-  width: 150px;
-}
-/* Content scrolls under the header, so after scroll the logo sits on the same pill as the nav. */
-.site-header .brand {
-  /* The pill's inner padding is pulled back so the logo keeps the content edge. */
-  margin-left: -8px;
-  padding: 6px 14px 6px 8px;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  transition:
-    background 0.3s,
-    border-color 0.3s;
-}
-.site-header.is-scrolled .brand {
-  border-color: var(--line);
-  background: color-mix(in srgb, var(--bg) 72%, transparent);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
+  width: 160px;
 }
 
 .header-actions {
@@ -353,8 +333,8 @@ img {
   .site-header.is-scrolled {
     height: var(--header-h);
   }
-  .site-header.is-scrolled .brand-logo-switch {
-    width: min(124px, 38vw);
+  .site-header .brand-logo-switch {
+    width: 120px;
   }
   .header-actions {
     gap: 6px;
