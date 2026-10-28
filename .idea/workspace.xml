@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8253e5fa-7f8f-4068-96e0-d24b51dd40b1" name="Changes" comment="Update portfolio description in index.html" />
+    <list default="true" id="8253e5fa-7f8f-4068-96e0-d24b51dd40b1" name="Changes" comment="Update portfolio description in index.html">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,18 +18,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ArduRadioKot"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ArduRadioKot&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ArduRadioKot/Alex-fgCV.git",
-    "accountId": "3bca4a18-68a8-462d-b8b5-d6f5f4d99d17"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ArduRadioKot/Alex-fgCV.git&quot;,
+    &quot;accountId&quot;: &quot;3bca4a18-68a8-462d-b8b5-d6f5f4d99d17&quot;
   }
-}]]></component>
+}</component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="projectWorkspaceSettings">
       <ProjectWorkspaceSettings>
@@ -43,99 +45,105 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000002351362" />
-      <entry key="MS500" value="1.047234997759882" />
-      <entry key="S2" value="1.4661932483108413" />
-      <entry key="S5" value="1.7374119523380855" />
-      <entry key="S10" value="1.8803939157862357" />
-      <entry key="S30" value="2.2303763976706183" />
-      <entry key="S60" value="2.5040144869554872" />
-      <entry key="M2" value="2.714776004109971" />
-      <entry key="M5" value="2.8753917088090364" />
-      <entry key="M10" value="2.9357911410209496" />
-      <entry key="M15" value="2.956758807652662" />
-      <entry key="M30" value="2.9781586762055614" />
-      <entry key="H1" value="2.989023570163903" />
-      <entry key="H2" value="2.994497769161277" />
-      <entry key="H4" value="2.9972453713155267" />
-      <entry key="D1" value="2.9995404064756883" />
-      <entry key="W1" value="2.999934331802695" />
+      <entry key="MS100" value="1.7546813290257123E-11" />
+      <entry key="MS500" value="0.007060568177742858" />
+      <entry key="S2" value="0.28987443339235547" />
+      <entry key="S5" value="0.6093740627831216" />
+      <entry key="S10" value="0.7806241495003351" />
+      <entry key="S30" value="0.9207618726434758" />
+      <entry key="S60" value="0.9595633760432272" />
+      <entry key="M2" value="0.9795730580489915" />
+      <entry key="M5" value="0.9918421745922912" />
+      <entry key="M10" value="1.0096853338392957" />
+      <entry key="M15" value="1.0802396057163284" />
+      <entry key="M30" value="1.4975629910435888" />
+      <entry key="H1" value="2.2227410571963477" />
+      <entry key="H2" value="2.915449465753327" />
+      <entry key="H4" value="3.397195648833405" />
+      <entry key="D1" value="3.8899198535968535" />
+      <entry key="W1" value="3.9840213227897427" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="3.73280704209914E-52" />
-      <entry key="MS500" value="5.180922646846712E-11" />
-      <entry key="S2" value="0.0026828832684172308" />
-      <entry key="S5" value="0.09363553814365633" />
-      <entry key="S10" value="0.30599924533184114" />
-      <entry key="S30" value="0.6738658561089199" />
-      <entry key="S60" value="0.8208933280938029" />
-      <entry key="M2" value="0.9060316374684733" />
-      <entry key="M5" value="0.9612964647950653" />
-      <entry key="M10" value="0.9804572733143783" />
-      <entry key="M15" value="0.9869287073549274" />
-      <entry key="M30" value="0.993442855606163" />
-      <entry key="H1" value="0.9967160355919649" />
-      <entry key="H2" value="0.998356667525171" />
-      <entry key="H4" value="0.9991779959172294" />
-      <entry key="D1" value="0.9998629523729872" />
-      <entry key="W1" value="0.9999804206175505" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0004632247632521" />
+      <entry key="S2" value="1.146706022285169" />
+      <entry key="S5" value="1.4640653866461002" />
+      <entry key="S10" value="1.681223448397147" />
+      <entry key="S30" value="1.8798930002467076" />
+      <entry key="S60" value="1.9380261191708406" />
+      <entry key="M2" value="1.9685174852189684" />
+      <entry key="M5" value="1.9873072718089966" />
+      <entry key="M10" value="1.9982329266268164" />
+      <entry key="M15" value="2.023444134685417" />
+      <entry key="M30" value="2.1643035125046133" />
+      <entry key="H1" value="2.4068972935690476" />
+      <entry key="H2" value="2.638186822836472" />
+      <entry key="H4" value="2.7989329536937624" />
+      <entry key="D1" value="2.963287304894626" />
+      <entry key="W1" value="2.9946710900516664" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9726551729700054" />
-      <entry key="MS500" value="1.0413139062299663" />
-      <entry key="S2" value="1.4650121595373145" />
-      <entry key="S5" value="1.8034872523802181" />
-      <entry key="S10" value="2.138987696626924" />
-      <entry key="S30" value="2.86745709919925" />
-      <entry key="S60" value="3.3020907201327754" />
-      <entry key="M2" value="3.6080865927300105" />
-      <entry key="M5" value="3.8312537875489925" />
-      <entry key="M10" value="3.9134707563150766" />
-      <entry key="M15" value="3.9418220899589915" />
-      <entry key="M30" value="3.970661937806184" />
-      <entry key="H1" value="3.9852680779939846" />
-      <entry key="H2" value="3.9926182388097913" />
-      <entry key="H4" value="3.996305159631796" />
-      <entry key="D1" value="3.9993836424759" />
-      <entry key="W1" value="3.99991193542544" />
+      <entry key="MS100" value="1.7546834618685314E-11" />
+      <entry key="MS500" value="0.007537795014394559" />
+      <entry key="S2" value="0.4977518088273643" />
+      <entry key="S5" value="1.400493276145941" />
+      <entry key="S10" value="2.0337337987422996" />
+      <entry key="S30" value="2.6307028697491845" />
+      <entry key="S60" value="2.8086591944462405" />
+      <entry key="M2" value="2.902590254756715" />
+      <entry key="M5" value="2.9606945646563267" />
+      <entry key="M10" value="2.9986348490190107" />
+      <entry key="M15" value="3.097441561306504" />
+      <entry key="M30" value="3.658609376012302" />
+      <entry key="H1" value="4.627894290609964" />
+      <entry key="H2" value="5.552709344806204" />
+      <entry key="H4" value="6.195646062490096" />
+      <entry key="D1" value="6.85312348688035" />
+      <entry key="W1" value="6.978680371157806" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2,
-  "fromUser": false
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3KHE2uGuz0PrvYnt0RfO4QxiZdn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/aleksandrvorobev/Documents/cv/Alex-fgCV/assets",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/aleksandrvorobev/Documents/github/cv/Alex-fgCV&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
@@ -153,7 +161,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1791205890147</updated>
-      <workItem from="1791205891310" duration="1118000" />
+      <workItem from="1791205891310" duration="2253000" />
+      <workItem from="1792366603229" duration="972000" />
+      <workItem from="1792533807532" duration="1852000" />
+      <workItem from="1792669058190" duration="524000" />
+      <workItem from="1792677199347" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="small fix">
       <option name="closed" value="true" />
@@ -179,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1791206529564</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update portfolio description in index.html">
+      <option name="closed" value="true" />
+      <created>1791211067421</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1791211067421</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update portfolio description in index.html">
+      <option name="closed" value="true" />
+      <created>1791211083402</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1791211083402</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
