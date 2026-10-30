@@ -34,8 +34,8 @@
       en: 'Hi, I\u2019m <span>Alexander.</span>'
     },
     'hero.lead': {
-      ru: '<strong>FullStack и embedded-разработчик,</strong> молодой учёный и руководитель <a href="https://frogeesoft.ru" rel="noreferrer" target="_blank">FrogeeSoft</a>, студент Научно-технологического университета «Сириус». Работаю с робототехникой, embedded-системами, компьютерным зрением и fullstack-продуктами.',
-      en: '<strong>Full-stack and embedded developer,</strong> young scientist, and head of <a href="https://frogeesoft.ru" rel="noreferrer" target="_blank">FrogeeSoft</a>. First-year student at Sirius University of Science and Technology. I work with robotics, embedded systems, computer vision, and full-stack products.'
+      ru: '<strong>FullStack и embedded-разработчик,</strong> основатель <a href="https://frogeesoft.ru" rel="noreferrer" target="_blank">FrogeeSoft</a>, молодой учёный, студент Научно-технологического университета «Сириус». Работаю с робототехникой, embedded-системами, компьютерным зрением и fullstack-продуктами.',
+      en: '<strong>Full-stack and embedded developer,</strong> founder of <a href="https://frogeesoft.ru" rel="noreferrer" target="_blank">FrogeeSoft</a>, young scientist, and a first-year student at Sirius University of Science and Technology. I work with robotics, embedded systems, computer vision, and full-stack products.'
     },
     'hero.projects': { ru: 'Смотреть проекты', en: 'View projects' },
     'hero.contact': { ru: 'Написать мне', en: 'Get in touch' },
@@ -228,16 +228,16 @@
     },
     'about.rail': { ru: 'Личный проект', en: 'My project' },
     'about.kicker': {
-      ru: 'Мой личный технологический проект',
-      en: 'My own technology project'
+      ru: 'Основной проект, который я основал',
+      en: 'The main project I founded'
     },
     'about.p1': {
-      ru: 'FrogeeSoft / S.I.T — <strong>мой личный технологический проект</strong>. В его рамках я создаю инструменты для разработчиков, проектирую электронные устройства, собираю робототехнические системы и проверяю идеи на инженерных соревнованиях и хакатонах.',
-      en: 'FrogeeSoft / S.I.T is <strong>my own technology project</strong>. I use it to build developer tools, design electronics, assemble robotic systems, and test ideas at engineering contests and hackathons.'
+      ru: 'FrogeeSoft — <strong>мой основной проект, я его основатель</strong>. В его рамках я создаю инструменты для разработчиков, проектирую электронные устройства, собираю робототехнические системы и проверяю идеи на инженерных соревнованиях и хакатонах.',
+      en: 'FrogeeSoft is <strong>my main project, and I am its founder</strong>. I use it to build developer tools, design electronics, assemble robotic systems, and test ideas at engineering contests and hackathons.'
     },
     'about.p2': {
-      ru: 'Также я развиваю образовательную платформу <strong>sit-edu.ru</strong>, веду канал проекта и публикую материалы о разработке, робототехнике, электронике и собственных экспериментах.',
-      en: 'I also run the learning platform <strong>sit-edu.ru</strong>, keep the project channel, and publish notes on development, robotics, electronics, and my own experiments.'
+      ru: 'Внутри FrogeeSoft я развиваю образовательную платформу <strong>S.I.T Education</strong> (sit-edu.ru), веду канал проекта и публикую материалы о разработке, робототехнике, электронике и собственных экспериментах.',
+      en: 'Within FrogeeSoft I run the learning platform <strong>S.I.T Education</strong> (sit-edu.ru), keep the project channel, and publish notes on development, robotics, electronics, and my own experiments.'
     },
     'about.tools': { ru: 'Инструменты', en: 'Developer tools' },
     'about.devices': { ru: 'Устройства', en: 'Devices' },
@@ -245,6 +245,7 @@
     'about.competitions': { ru: 'Соревнования', en: 'Competitions' },
     'about.education': { ru: 'Образование', en: 'Education' },
     'about.platform': { ru: 'Платформа', en: 'Platform' },
+    'about.site': { ru: 'Сайт', en: 'Website' },
     'contact.rail': { ru: 'Контакты', en: 'Contact' },
     'contact.title': { ru: 'Давайте <em>обсудим.</em>', en: 'Let\u2019s <em>talk.</em>' },
     'contact.text': {
