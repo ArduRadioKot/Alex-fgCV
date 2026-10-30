@@ -498,6 +498,16 @@ img {
   color: var(--text);
   font-weight: var(--fw-bold);
 }
+.hero-lead a {
+  color: var(--accent);
+  font-weight: var(--fw-bold);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+.hero-lead a:hover {
+  text-decoration-thickness: 2px;
+}
 .hero-actions {
   display: flex;
   gap: var(--space-12);

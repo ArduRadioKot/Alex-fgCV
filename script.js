@@ -34,8 +34,8 @@
       en: 'Hi, I\u2019m <span>Alexander.</span>'
     },
     'hero.lead': {
-      ru: '<strong>FullStack и embedded-разработчик,</strong> студент Научно-технологического университета «Сириус». Работаю с робототехникой, embedded-системами, компьютерным зрением и fullstack-продуктами.',
-      en: '<strong>Full-stack and embedded developer</strong> and a first-year student at Sirius University of Science and Technology. I work with robotics, embedded systems, computer vision, and full-stack products.'
+      ru: '<strong>FullStack и embedded-разработчик,</strong> молодой учёный и руководитель <a href="https://frogeesoft.ru" rel="noreferrer" target="_blank">FrogeeSoft</a>, студент Научно-технологического университета «Сириус». Работаю с робототехникой, embedded-системами, компьютерным зрением и fullstack-продуктами.',
+      en: '<strong>Full-stack and embedded developer,</strong> young scientist, and head of <a href="https://frogeesoft.ru" rel="noreferrer" target="_blank">FrogeeSoft</a>. First-year student at Sirius University of Science and Technology. I work with robotics, embedded systems, computer vision, and full-stack products.'
     },
     'hero.projects': { ru: 'Смотреть проекты', en: 'View projects' },
     'hero.contact': { ru: 'Написать мне', en: 'Get in touch' },
