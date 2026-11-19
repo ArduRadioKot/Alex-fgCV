@@ -187,6 +187,11 @@
     'research.ppKaggle': { ru: 'Работа на Kaggle', en: 'Kaggle writeup' },
     'research.pdf': { ru: 'Статья, PDF', en: 'Paper, PDF' },
     'research.code': { ru: 'Код', en: 'Code' },
+    'research.vsTitle': { ru: 'ВОСТОК-612', en: 'VOSTOK-612' },
+    'research.vsOriginal': {
+      ru: 'Разработка гибридного ML-пайплайна для оценки и выбора конфигурации для строительства АСММ при ограниченном наборе данных',
+      en: 'A hybrid ML pipeline for assessing and choosing a small modular nuclear plant configuration with a limited dataset'
+    },
     'research.vsVenue': { ru: 'Конференция AtomFuture', en: 'AtomFuture conference' },
     'research.vsText': {
       ru: 'Модель для выбора площадки и конфигурации атомной станции малой мощности на Дальнем Севере и Дальнем Востоке, когда часть исходных данных неизвестна. Соавтор – С.\u00a0А.\u00a0Коршунов.',
