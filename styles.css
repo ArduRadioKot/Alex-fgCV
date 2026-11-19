@@ -14,7 +14,7 @@
   --header-h: 96px;
   --container: min(1240px, calc(100vw - 48px));
 
-  /* Type — five working sizes plus display steps; mobile values are set in the 620px query */
+  /* Type - five working sizes plus display steps; mobile values are set in the 620px query */
   --fs-micro: 0.8125rem;
   --fs-small: 0.875rem;
   --fs-body: 1rem;
@@ -162,7 +162,7 @@ img {
 
 /* Header (PillHeader from the FrogeeSoft kit, as on FG-Track): logo on the left; on the right a
    navigation pill and round buttons. No action button. 96px at the top, 80px after scroll;
-   below 1100px the pill hides and the menu opens as a full-screen sheet. */
+   below 1200px the pill hides and the menu opens as a full-screen sheet. */
 .site-header {
   position: fixed;
   z-index: 80;
@@ -317,7 +317,7 @@ img {
   display: none;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .header-pill {
     display: none;
   }
@@ -1149,6 +1149,80 @@ html[lang="en"] .noscript [lang="ru"] {
   color: var(--accent);
 }
 
+/* Research: two papers side by side, each with its venue, a one-line result and links. */
+.research-grid {
+  margin-top: var(--space-64);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-16);
+}
+.paper-card {
+  min-width: 0;
+  padding: var(--space-32);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+.paper-card p {
+  margin: 0;
+}
+.paper-card h3 {
+  margin: 0;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+}
+.paper-venue {
+  color: var(--accent);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-heavy);
+}
+.paper-original {
+  color: var(--muted);
+  font-size: var(--fs-small);
+  line-height: var(--lh-snug);
+}
+.paper-result {
+  margin-top: var(--space-8);
+  padding-top: var(--space-16);
+  display: grid;
+  gap: var(--space-4);
+  border-top: var(--rule);
+}
+.paper-result strong {
+  color: var(--accent);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-black);
+  line-height: 1;
+  letter-spacing: var(--ls-heading);
+  font-variant-numeric: tabular-nums;
+}
+.paper-result span {
+  color: var(--muted);
+  font-size: var(--fs-small);
+}
+.paper-card .tags {
+  margin-top: auto;
+}
+.paper-card .project-links {
+  margin-top: 0;
+}
+@media (max-width: 980px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 620px) {
+  .research-grid {
+    margin-top: var(--space-48);
+  }
+  .paper-card {
+    padding: var(--space-24) var(--space-20);
+  }
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
@@ -1574,7 +1648,7 @@ html[lang="en"] .noscript [lang="ru"] {
   }
 }
 
-/* Mobile layout reliability — 2026-08-02 */
+/* Mobile layout reliability - 2026-08-02 */
 @media (max-width: 980px) {
   html {
     scroll-padding-top: 88px;
@@ -1728,7 +1802,7 @@ html[lang="en"] .noscript [lang="ru"] {
 }
 
 /* =========================================================
-   CONTENT REDESIGN — 2026-08-02
+   CONTENT REDESIGN - 2026-08-02
    The hero section above is intentionally left untouched.
    ========================================================= */
 
@@ -2169,7 +2243,7 @@ html[lang="en"] .noscript [lang="ru"] {
   background: var(--bg-soft);
 }
 
-/* Vertical section headings — desktop only */
+/* Vertical section headings - desktop only */
 .section-rail {
   display: none;
 }

@@ -3,23 +3,24 @@
 
   const I18N = {
     'meta.title': {
-      ru: 'Александр — Developer & Engineer',
-      en: 'Alexander — Developer & Engineer'
+      ru: 'Александр – Developer & Engineer',
+      en: 'Alexander – Developer & Engineer'
     },
     'meta.description': {
-      ru: 'Александр — разработчик и инженер: embedded, робототехника, компьютерное зрение, AI, web и IoT.',
-      en: 'Alexander — developer and engineer: embedded systems, robotics, computer vision, AI, web, and IoT.'
+      ru: 'Александр – разработчик и инженер: embedded, робототехника, компьютерное зрение, AI, web и IoT.',
+      en: 'Alexander – developer and engineer: embedded systems, robotics, computer vision, AI, web, and IoT.'
     },
     'meta.ogDescription': {
       ru: 'Личное портфолио и резюме: FrogeeSoft/S.I.T, embedded, робототехника, компьютерное зрение, AI, web и IoT.',
       en: 'Personal portfolio and résumé: FrogeeSoft/S.I.T, embedded systems, robotics, computer vision, AI, web, and IoT.'
     },
     'a11y.skip': { ru: 'Перейти к содержимому', en: 'Skip to content' },
-    'brand.home': { ru: 'FrogeeSoft — на главную', en: 'FrogeeSoft — back to top' },
+    'brand.home': { ru: 'FrogeeSoft – на главную', en: 'FrogeeSoft – back to top' },
     'nav.primary': { ru: 'Основная навигация', en: 'Primary' },
     'nav.menu': { ru: 'Меню', en: 'Menu' },
     'nav.about': { ru: 'Обо мне', en: 'About' },
     'nav.projects': { ru: 'Проекты', en: 'Projects' },
+    'nav.research': { ru: 'Исследования', en: 'Research' },
     'nav.achievements': { ru: 'Достижения', en: 'Achievements' },
     'nav.process': { ru: 'Как я работаю', en: 'How I work' },
     'nav.personal': { ru: 'Личный проект', en: 'My project' },
@@ -105,9 +106,9 @@
       ru: 'Результат компьютерного зрения: обнаруженные трещины выделены рамками',
       en: 'Computer-vision result: detected cracks outlined with boxes'
     },
-    'project.mopsTitle': { ru: 'МОПС — мониторинг сооружений', en: 'MOPS — structure monitoring' },
+    'project.mopsTitle': { ru: 'МОПС – мониторинг сооружений', en: 'MOPS – structure monitoring' },
     'project.mopsText': {
-      ru: 'Система, созданная при поддержке ГК\u00A0«Геоскан»: дрон собирает фотографии объекта, Metashape строит ортофотофасад, а YOLO находит трещины. Backend — FastAPI, интерфейс — React.',
+      ru: 'Система, созданная при поддержке ГК\u00A0«Геоскан»: дрон собирает фотографии объекта, Metashape строит ортофотофасад, а YOLO находит трещины. Backend – FastAPI, интерфейс – React.',
       en: 'Built with support from Geoscan Group: a drone photographs the site, Metashape builds an orthophoto facade, and YOLO finds cracks. The backend is FastAPI; the interface is React.'
     },
     'project.yasnoAria': { ru: 'Ясно на GitHub', en: 'Yasno on GitHub' },
@@ -165,10 +166,38 @@
       en: 'A platform for rapid prototyping of embedded and IoT devices: a custom module, a code editor, a scripting language, and a set of built-in libraries.'
     },
     'projects.more': {
-      ru: 'Больше desktop-, web-, embedded- и робототехнических проектов — в профиле GitHub.',
+      ru: 'Больше desktop-, web-, embedded- и робототехнических проектов – в профиле GitHub.',
       en: 'More desktop, web, embedded, and robotics projects are in the GitHub profile.'
     },
     'projects.allCta': { ru: 'Все репозитории', en: 'All repositories' },
+    'research.rail': { ru: 'Исследования', en: 'Research' },
+    'research.title': { ru: 'Научные работы', en: 'Research papers' },
+    'research.ppVenue': {
+      ru: 'Google · Gemma 4 Developer Agent Paper, Kaggle',
+      en: 'Google · Gemma 4 Developer Agent Paper, Kaggle'
+    },
+    'research.ppText': {
+      ru: 'Как уместить код, который нужно поправить, в контекст небольшой локальной модели на 2048 токенов. Вероятность правки каждого фрагмента предсказывает модель, обученная на истории коммитов самих репозиториев, без разметки бенчмарка.',
+      en: 'How to fit the code a fix will change into the 2048-token context of a small local model. A model trained on the repositories\u2019 own commit history, with no benchmark labels, predicts how likely each fragment is to be edited.'
+    },
+    'research.ppResult': {
+      ru: 'доля нужных функций в контексте на 100 отложенных задачах SWE-bench Verified',
+      en: 'share of the needed functions in context on 100 held-out SWE-bench Verified tasks'
+    },
+    'research.ppKaggle': { ru: 'Работа на Kaggle', en: 'Kaggle writeup' },
+    'research.pdf': { ru: 'Статья, PDF', en: 'Paper, PDF' },
+    'research.code': { ru: 'Код', en: 'Code' },
+    'research.vsVenue': { ru: 'Конференция AtomFuture', en: 'AtomFuture conference' },
+    'research.vsText': {
+      ru: 'Модель для выбора площадки и конфигурации атомной станции малой мощности на Дальнем Севере и Дальнем Востоке, когда часть исходных данных неизвестна. Соавтор – С.\u00a0А.\u00a0Коршунов.',
+      en: 'A model for choosing the site and configuration of a small modular nuclear plant in Russia\u2019s Far North and Far East when part of the input data is missing. Co-author: S.\u00a0A.\u00a0Korshunov.'
+    },
+    'research.vsResult': {
+      ru: 'доля рекомендаций по 18 сценариям при ~10\u00a0% пропусков в данных',
+      en: 'share of recommendations across 18 scenarios with about 10% of the data missing'
+    },
+    'research.tagMcda': { ru: 'Многокритериальный анализ', en: 'Multi-criteria analysis' },
+    'research.tagNuclear': { ru: 'Атомная энергетика', en: 'Nuclear energy' },
     'ach.rail': { ru: 'Достижения', en: 'Achievements' },
     'ach.title': {
       ru: 'Опыт участия в <em>соревнованиях</em>',
@@ -232,7 +261,7 @@
       en: 'The main project I founded'
     },
     'about.p1': {
-      ru: 'FrogeeSoft — <strong>мой основной проект, я его основатель</strong>. В его рамках я создаю инструменты для разработчиков, проектирую электронные устройства, собираю робототехнические системы и проверяю идеи на инженерных соревнованиях и хакатонах.',
+      ru: 'FrogeeSoft – <strong>мой основной проект, я его основатель</strong>. В его рамках я создаю инструменты для разработчиков, проектирую электронные устройства, собираю робототехнические системы и проверяю идеи на инженерных соревнованиях и хакатонах.',
       en: 'FrogeeSoft is <strong>my main project, and I am its founder</strong>. I use it to build developer tools, design electronics, assemble robotic systems, and test ideas at engineering contests and hackathons.'
     },
     'about.p2': {
@@ -326,7 +355,7 @@
     if (event.key === 'Escape') closeMenu();
   });
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 1100) closeMenu();
+    if (window.innerWidth > 1200) closeMenu();
   }, { passive: true });
 
   const observer = new IntersectionObserver(entries => {

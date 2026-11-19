@@ -21,13 +21,13 @@
       })();
     </script>
     <meta
-      content="Александр — разработчик и инженер: embedded, робототехника, компьютерное зрение, AI, web и IoT."
+      content="Александр – разработчик и инженер: embedded, робототехника, компьютерное зрение, AI, web и IoT."
       data-i18n-content="meta.description"
       name="description"
     />
     <meta content="#090c0a" name="theme-color" />
     <meta
-      content="Александр — Developer &amp; Engineer"
+      content="Александр – Developer &amp; Engineer"
       data-i18n-content="meta.title"
       property="og:title"
     />
@@ -37,7 +37,7 @@
       property="og:description"
     />
     <meta content="website" property="og:type" />
-    <title data-i18n="meta.title">Александр — Developer &amp; Engineer</title>
+    <title data-i18n="meta.title">Александр – Developer &amp; Engineer</title>
     <link href="assets/logo.png" rel="icon" type="image/png" />
     <link href="styles.css" rel="stylesheet" />
     <script defer="" src="script.js"></script>
@@ -47,7 +47,7 @@
     <div aria-hidden="true" class="page-noise"></div>
     <header class="site-header" data-header="">
       <a
-        aria-label="FrogeeSoft — на главную"
+        aria-label="FrogeeSoft – на главную"
         data-i18n-aria="brand.home"
         class="brand brand-logo-link"
         href="#top"
@@ -77,6 +77,7 @@
         >
           <a data-i18n="nav.about" data-nav-link href="#info">Обо мне</a>
           <a data-i18n="nav.projects" data-nav-link href="#projects">Проекты</a>
+          <a data-i18n="nav.research" data-nav-link href="#research">Исследования</a>
           <a data-i18n="nav.achievements" data-nav-link href="#achievements">Достижения</a>
           <a data-i18n="nav.process" data-nav-link href="#process">Как я работаю</a>
           <a data-i18n="nav.personal" data-nav-link href="#about">Личный проект</a>
@@ -126,6 +127,7 @@
       <nav aria-label="Меню" data-i18n-aria="nav.menu">
       <a data-i18n="nav.about" data-nav-link href="#info">Обо мне</a>
       <a data-i18n="nav.projects" data-nav-link href="#projects">Проекты</a>
+      <a data-i18n="nav.research" data-nav-link href="#research">Исследования</a>
       <a data-i18n="nav.achievements" data-nav-link href="#achievements">Достижения</a>
       <a data-i18n="nav.process" data-nav-link href="#process">Как я работаю</a>
       <a data-i18n="nav.personal" data-nav-link href="#about">Личный проект</a>
@@ -371,11 +373,11 @@
                 width="1754"
               />
             </a>
-            <h3 data-i18n="project.mopsTitle">МОПС — мониторинг сооружений</h3>
+            <h3 data-i18n="project.mopsTitle">МОПС – мониторинг сооружений</h3>
             <p data-i18n="project.mopsText">
               Система, созданная при поддержке ГК&nbsp;«Геоскан»: дрон собирает
               фотографии объекта, Metashape строит ортофотофасад, а YOLO находит
-              трещины. Backend — FastAPI, интерфейс — React.
+              трещины. Backend – FastAPI, интерфейс – React.
             </p>
             <div class="tags">
               <span>Python</span><span>React</span><span>FastAPI</span
@@ -604,7 +606,7 @@
         </div>
         <div class="all-projects reveal">
           <p data-i18n="projects.more">
-            Больше desktop-, web-, embedded- и робототехнических проектов — в
+            Больше desktop-, web-, embedded- и робототехнических проектов – в
             профиле GitHub.
           </p>
           <a
@@ -617,12 +619,96 @@
         </div>
       </section>
 
+      <section class="section research-section has-section-rail" id="research">
+        <div class="section-rail" aria-hidden="true">
+          <span data-i18n="research.rail">Исследования</span><strong>03</strong>
+        </div>
+        <div class="section-heading reveal">
+          <h2 data-i18n="research.title">Научные работы</h2>
+        </div>
+
+        <div class="research-grid">
+          <article class="paper-card reveal">
+            <p class="paper-venue" data-i18n="research.ppVenue">
+              Google · Gemma 4 Developer Agent Paper, Kaggle
+            </p>
+            <h3>PathPack</h3>
+            <p class="paper-original" lang="en">
+              History Replay and Packing Under Expected Metrics: Localizing
+              Edits Under a Token Budget
+            </p>
+            <p data-i18n="research.ppText">
+              Как уместить код, который нужно поправить, в контекст небольшой
+              локальной модели на 2048 токенов. Вероятность правки каждого
+              фрагмента предсказывает модель, обученная на истории коммитов
+              самих репозиториев, без разметки бенчмарка.
+            </p>
+            <div class="paper-result">
+              <strong>0,19 → 0,53</strong>
+              <span data-i18n="research.ppResult"
+                >доля нужных функций в контексте на 100 отложенных задачах
+                SWE-bench Verified</span
+              >
+            </div>
+            <div class="tags">
+              <span>Python</span><span>LLM</span><span>Gemma 4</span
+              ><span>SWE-bench</span>
+            </div>
+            <div class="project-links">
+                <a href="https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/writeups/pathpack-history-based-code-localization-under-a" rel="noreferrer" target="_blank"
+                  ><span data-i18n="research.ppKaggle">Работа на Kaggle</span> <span aria-hidden="true">↗</span></a
+                >
+                <a href="https://storage.googleapis.com/kaggle-forum-message-attachments/3554177/55277/PathPack_Research_Paper.pdf" rel="noreferrer" target="_blank"
+                  ><span data-i18n="research.pdf">Статья, PDF</span> <span aria-hidden="true">↗</span></a
+                >
+                <a href="https://github.com/ArduRadioKot/PathPack" rel="noreferrer" target="_blank"
+                  ><span data-i18n="research.code">Код</span> <span aria-hidden="true">↗</span></a
+                >
+            </div>
+          </article>
+
+          <article class="paper-card reveal reveal-delay-1">
+            <p class="paper-venue" data-i18n="research.vsVenue">Конференция AtomFuture</p>
+            <h3>ВОСТОК-612</h3>
+            <p class="paper-original">
+              Разработка гибридного ML-пайплайна для оценки и выбора
+              конфигурации для строительства АСММ при ограниченном наборе данных
+            </p>
+            <p data-i18n="research.vsText">
+              Модель для выбора площадки и конфигурации атомной станции малой
+              мощности на Дальнем Севере и Дальнем Востоке, когда часть
+              исходных данных неизвестна. Соавтор – С.&nbsp;А.&nbsp;Коршунов.
+            </p>
+            <div class="paper-result">
+              <strong>47 → 75&nbsp;%</strong>
+              <span data-i18n="research.vsResult"
+                >доля рекомендаций по 18 сценариям при ~10&nbsp;% пропусков в
+                данных</span
+              >
+            </div>
+            <div class="tags">
+              <span>Python</span><span>ML</span
+              ><span data-i18n="research.tagMcda">Многокритериальный анализ</span
+              ><span data-i18n="research.tagNuclear">Атомная энергетика</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/ArduRadioKot/vostok-612/blob/main/docs/vostok-612.pdf" rel="noreferrer" target="_blank"
+                  ><span data-i18n="research.pdf">Статья, PDF</span> <span aria-hidden="true">↗</span></a
+                >
+                <a href="https://github.com/ArduRadioKot/vostok-612" rel="noreferrer" target="_blank"
+                  ><span data-i18n="research.code">Код</span> <span aria-hidden="true">↗</span></a
+                >
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section
         class="section achievements timeline-section has-section-rail"
         id="achievements"
       >
         <div class="section-rail" aria-hidden="true">
-          <span data-i18n="ach.rail">Достижения</span><strong>03</strong>
+          <span data-i18n="ach.rail">Достижения</span><strong>04</strong>
         </div>
         <div class="section-heading reveal">
           <h2 data-i18n="ach.title">Опыт участия в <em>соревнованиях</em></h2>
@@ -690,7 +776,7 @@
 
       <section class="section workflow-section has-section-rail" id="process">
         <div class="section-rail" aria-hidden="true">
-          <span data-i18n="work.rail">Как я работаю</span><strong>04</strong>
+          <span data-i18n="work.rail">Как я работаю</span><strong>05</strong>
         </div>
         <div class="workflow-head reveal">
           <h2 data-i18n="work.title">От задачи до прототипа.</h2>
@@ -743,7 +829,7 @@
         id="about"
       >
         <div class="section-rail" aria-hidden="true">
-          <span data-i18n="about.rail">Личный проект</span><strong>05</strong>
+          <span data-i18n="about.rail">Личный проект</span><strong>06</strong>
         </div>
         <article class="team-card reveal">
           <div class="team-card-brand">
@@ -765,7 +851,7 @@
           <div class="team-card-copy">
             <h3>FrogeeSoft / S.I.T</h3>
             <p data-i18n="about.p1">
-              FrogeeSoft —
+              FrogeeSoft –
               <strong>мой основной проект, я его основатель</strong>. В его рамках я
               создаю инструменты для разработчиков, проектирую электронные
               устройства, собираю робототехнические системы и проверяю идеи на
@@ -822,7 +908,7 @@
         id="contact"
       >
         <div class="section-rail" aria-hidden="true">
-          <span data-i18n="contact.rail">Контакты</span><strong>06</strong>
+          <span data-i18n="contact.rail">Контакты</span><strong>07</strong>
         </div>
         <div class="contact-card reveal">
           <div class="contact-copy">
